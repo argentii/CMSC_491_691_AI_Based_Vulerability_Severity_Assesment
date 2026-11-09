@@ -75,8 +75,8 @@ cd pilot
 | 2. Test access | `../.venv/bin/python test_call.py [CVE_ID] [REPEATS]` | Yes, `REPEATS` calls (default 1) | Fetches one CVE from NVD, removes the ID from the text, sends it to Jev, and prints the raw response alongside NVD's vector. Defaults: `CVE-2023-38545`, 1 repeat. |
 | 4.1 Pick CVEs | `../.venv/bin/python fetch_cves.py [END_DATE]` | No | Picks 15 CVEs (3 Low, 4 Medium, 4 High, 4 Critical) that have NVD-assigned v3.1 vectors, one per product and CWE type where possible, from the 120 days before `END_DATE` (default `2026-06-30`). Overwrites `data/cves.jsonl`. |
 | 4.2 Noise test | `../.venv/bin/python run_noise.py [--yes]` | Yes, 15 × 8 = 120 | Sends each original description unchanged 8 times. It prints the call count and asks `Proceed? [y/N]` first, unless you pass `--yes`, which skips the prompt. If interrupted, rerunning it skips the calls already done. |
-| 5. Variants | `run_variants.py` | Yes, 5 × 3 × 8 = 120 | *Not written yet.* Sends the hand-written rewordings after you approve them. |
-| 6. Report | `../.venv/bin/python summarize.py` | No | Builds the tables from `data/*.jsonl` and writes `pilot_report.md`. The noise section is done; the variants section is added after Step 5. |
+| 5. Variants | `../.venv/bin/python run_variants.py [--yes]` | Yes, approved variants × 8 (pilot: 5 × 3 × 8 = 120) | Sends each variant in `data/variants.jsonl` that is marked `"approved": true`, 8 times. Shows the call count and asks first, unless you pass `--yes`. If interrupted, rerunning it skips the calls already done. |
+| 6. Report | `../.venv/bin/python summarize.py` | No | Builds every table from `data/*.jsonl` and writes `pilot_report.md`. The written findings and recommendation come from `pilot/report_notes.md`. |
 
 Every script that calls Jev shows the call count before it runs. At the current price ($0.042 per
 million input tokens, with output free), one call costs about $0.00006. The whole pilot of about 240
@@ -124,7 +124,9 @@ Critical 9.0–10.0.
 
 **Variants (reworded input):**
 
-- Compare each variant's runs with the original's runs. **A shift smaller than the original's own run-to-run spread is not evidence of a framing effect.**
+- Each metric gets a **severity index** from 0 to 1: each option's probability multiplied by its rank (least to most severe), averaged over the runs. For example, AV ranks physical = 0, local = ⅓, adjacent = ⅔, network = 1.
+- **Δ** is the variant's index minus the original's. It is shown in **bold** only when it is bigger than the original's own run-to-run range of that index (the "noise floor" row, never below 0.05). **A shift smaller than the noise floor is not evidence of a framing effect.**
+- `[L→H]` means the most common answer changed, for example from low to high.
 - What to look for is a metric moving **in one direction** consistently, for example alarmist wording raising C/I/A or lowering AC, while downplaying wording does the opposite.
 - With 5 CVEs these results are **descriptive only**. The pilot runs no significance tests.
 
@@ -140,6 +142,9 @@ pilot/
   test_call.py     Step 2: one-off test calls
   fetch_cves.py    Step 4.1: pick CVEs from NVD
   run_noise.py     Step 4.2: noise test
+  run_variants.py  Step 5: approved variants
+  summarize.py     Step 6: writes pilot_report.md
+  report_notes.md  written findings and recommendation included in the report
 data/              inputs and every raw Jev response (see above)
 CLAUDE.md          the full pilot plan and ground rules
 ```
