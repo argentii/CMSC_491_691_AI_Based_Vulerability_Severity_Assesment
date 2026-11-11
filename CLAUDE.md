@@ -37,6 +37,8 @@ pilot/
   run_noise.py       # Step 4
   run_variants.py    # Step 5
   summarize.py       # tables for the user
+  web.py             # read-only web dashboard (stdlib http.server, no Jev calls)
+  web/               # dashboard frontend: index.html + app.js + style.css (vanilla, no build step)
 data/
   cves.jsonl
   variants.jsonl

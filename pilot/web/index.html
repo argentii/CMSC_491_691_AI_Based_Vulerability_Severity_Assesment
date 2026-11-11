@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jev framing-robustness pilot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Jev framing-robustness pilot</h1>
+  <p id="meta-line">loading…</p>
+  <nav>
+    <button data-tab="noise" class="active">Noise test</button>
+    <button data-tab="variants">Variants</button>
+    <button data-tab="direction">Direction</button>
+  </nav>
+</header>
+<main>
+  <section id="tab-noise" class="tab active"></section>
+  <section id="tab-variants" class="tab"></section>
+  <section id="tab-direction" class="tab"></section>
+</main>
+<footer>
+  <p>Read-only view of <code>data/*.jsonl</code>. Reload to pick up new runs.
+     Full markdown report: <code>python pilot/summarize.py</code> → <code>pilot_report.md</code>.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

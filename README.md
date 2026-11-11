@@ -77,10 +77,34 @@ cd pilot
 | 4.2 Noise test | `../.venv/bin/python run_noise.py [--yes]` | Yes, 15 × 8 = 120 | Sends each original description unchanged 8 times. It prints the call count and asks `Proceed? [y/N]` first, unless you pass `--yes`, which skips the prompt. If interrupted, rerunning it skips the calls already done. |
 | 5. Variants | `../.venv/bin/python run_variants.py [--yes]` | Yes, approved variants × 8 (pilot: 5 × 3 × 8 = 120) | Sends each variant in `data/variants.jsonl` that is marked `"approved": true`, 8 times. Shows the call count and asks first, unless you pass `--yes`. If interrupted, rerunning it skips the calls already done. |
 | 6. Report | `../.venv/bin/python summarize.py` | No | Builds every table from `data/*.jsonl` and writes `pilot_report.md`. The written findings and recommendation come from `pilot/report_notes.md`. |
+| Dashboard | `../.venv/bin/python web.py [--host HOST] [--port PORT]` | No | Read-only web dashboard of the saved data (see below). Keeps running until you stop it with Ctrl-C. |
 
 Every script that calls Jev shows the call count before it runs. At the current price ($0.042 per
 million input tokens, with output free), one call costs about $0.00006. The whole pilot of about 240
 calls costs about $0.015.
+
+## Web dashboard
+
+`pilot/web.py` serves a read-only view of `data/*.jsonl` at **http://127.0.0.1:8034**. It adds
+**no dependencies** (Python stdlib `http.server`, plain HTML/CSS/JS in `pilot/web/`, no build
+step) and **never calls Jev** or reads `.env` — everything shown is already on disk, and the
+aggregate numbers are computed with the same code `summarize.py` uses, so the dashboard and
+`pilot_report.md` cannot disagree. Reload the page after a run to pick up new data.
+
+```bash
+../.venv/bin/python web.py                # serve on 127.0.0.1:8034
+../.venv/bin/python web.py --port 9000    # use a different port
+../.venv/bin/python web.py --host 0.0.0.0 # also reachable from other machines — only on purpose
+```
+
+- `--port`: the TCP port to listen on (default 8034).
+- `--host`: the network interface to bind. The default `127.0.0.1` is reachable only from this machine; `0.0.0.0` lets anyone on the network read the data.
+
+Three tabs, mirroring the report:
+
+- **Noise test** — one row per CVE (same-vector stability, per-metric agreement, score range, bands, probability spread, match against NVD). Click a row for per-run detail: distinct vectors with counts and how each differs from NVD, stacked probability bars (one per run, plus the mean), and a run log including errors.
+- **Variants** — per CVE: the noise floor row, then each variant's modal vector (chips red where it differs from the original's), mean score, Δ score, and per-metric severity-index Δ. Bold means beyond the noise floor; `[L→H]` marks a changed most-common answer. Click a row for the variant text, the original, the fact list, and that variant's probability bars.
+- **Direction** — for each version and metric, how many CVEs moved beyond the noise floor toward more severe (↑) or less severe (↓), plus the mean Δ score.
 
 ## What gets sent to Jev
 
@@ -145,6 +169,8 @@ pilot/
   run_variants.py  Step 5: approved variants
   summarize.py     Step 6: writes pilot_report.md
   report_notes.md  written findings and recommendation included in the report
+  web.py           read-only web dashboard (stdlib http.server, no Jev calls)
+  web/             dashboard frontend: index.html + app.js + style.css (no build step)
 data/              inputs and every raw Jev response (see above)
 CLAUDE.md          the full pilot plan and ground rules
 ```
