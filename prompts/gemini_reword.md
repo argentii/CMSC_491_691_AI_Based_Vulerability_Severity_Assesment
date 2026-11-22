@@ -13,7 +13,7 @@ the pilot's approved variants (`data/variants.jsonl`) and the "Perturbation rule
   human review (`"approved": false` until a person signs off). Gemini's `fact_check` is there to
   speed up review, not to replace it.
 - **Settings:** `responseMimeType: "application/json"` with the `responseSchema` below. Use
-  temperature ≈ 0.7 so the 3 neutral paraphrases actually differ, and generate all 6 in **one call**
+  temperature 1.0, Google's default for Gemini 3 (lower values can cause looping). That gives enough variety for the 3 neutral paraphrases to differ, and generate all 6 in **one call**
   so Gemini can see them side by side and keep them distinct. Log the raw response, the model
   version, and the settings, as `runs.jsonl` does for Jev.
 - **Length variant:** fixed to **verbose** (chosen 2026-11-15). A terse variant was considered and dropped.

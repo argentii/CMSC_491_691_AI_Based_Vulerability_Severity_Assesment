@@ -19,3 +19,17 @@ JEV_MAX_RETRIES = 4  # SDK retries 408/429/5xx with backoff and honours retry-af
 # Jev exposes no temperature or seed, so nothing to fix: the noise test measures natural variation.
 
 NVD_API = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+
+# --- Gemini (writes variants for the full study; see prompts/gemini_reword.md) ---
+# Chosen 2026-11-22. gemini-2.5-pro is closed to new API keys (HTTP 404), and gemini-3.1-pro-preview
+# has no free-tier quota (HTTP 429, limit 0). gemini-3.8-flash works on the free tier.
+# The exact modelVersion Gemini reports is logged on every call.
+GEMINI_MODEL = "gemini-3.8-flash"
+GEMINI_TEMPERATURE = 1.0  # Google's default for Gemini 3; lower values can cause looping
+GEMINI_MAX_RETRIES = 4
+# Pricing used only for the cost estimate (USD per million tokens; thinking tokens bill as output).
+# 0 because the key is on the free tier. Set real prices here if billing is turned on.
+GEMINI_PRICE_IN, GEMINI_PRICE_OUT = 0.0, 0.0
+PROMPT_PATH = ROOT / "prompts" / "gemini_reword.md"
+GEMINI_PATH = DATA / "gemini_variants.jsonl"   # one line per Gemini call: raw + parsed + checks
+GEMINI_REVIEW_PATH = ROOT / "gemini_review.md"  # side-by-side for human review
