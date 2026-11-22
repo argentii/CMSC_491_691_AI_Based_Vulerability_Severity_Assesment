@@ -35,7 +35,7 @@ python3 -m venv .venv
 - `python3 -m venv .venv`: creates an isolated Python environment in the `.venv/` folder. `-m venv` runs Python's built-in `venv` module.
 - `.venv/bin/pip install -r requirements.txt`: installs the packages into that environment. `-r` reads the package list from the file.
 
-### Give it your keys
+### Provide necessary keys
 
 The keys go in a file named `.env` in the repo root. `.env` is git-ignored and is never committed.
 Run each command from the repo root and paste your key at the prompt. Nothing appears on screen
