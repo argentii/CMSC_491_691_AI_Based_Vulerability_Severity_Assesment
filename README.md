@@ -37,59 +37,34 @@ python3 -m venv .venv
 
 ### Provide necessary keys
 
-The keys go in a file named `.env` in the repo root. `.env` is git-ignored and is never committed.
-Run each command from the repo root and paste your key at the prompt. Nothing appears on screen
-while you type or paste.
-
-**Jev (required).** Run this one first. It creates `.env`:
+Run this from the repo root:
 
 ```bash
-read -rs -p "JEV_API_KEY: " k && printf 'JEV_API_KEY=%s\n' "$k" > .env && unset k && chmod 600 .env
+./setup_keys.sh
 ```
 
-**Gemini (needed to generate variants).** Get a key at https://aistudio.google.com/apikey:
+`./` runs the script in the current folder. It asks for each key in turn (Jev, then Gemini, then
+NVD). For each one, **paste your key and press Enter**. Nothing appears on screen while you paste,
+so paste once only.
 
-```bash
-read -rs -p "GEMINI_API_KEY: " k && printf 'GEMINI_API_KEY=%s\n' "$k" >> .env && unset k
-```
+- **Jev** is required. Gemini is needed only to generate variants, and NVD is optional
+  (`fetch_cves.py` is slower without it). To skip a key, just press Enter.
+- If a key is already saved, the script asks whether to replace it. Press Enter to keep it.
+  Running the script again is always safe.
+- The keys go in `.env` in the repo root. `.env` is git-ignored and is never committed, and the
+  script makes it readable only by your user account.
+- When it finishes, it lists the names of the saved keys (never the keys themselves).
 
-**NVD (optional).** Without a key, `fetch_cves.py` is slower but still works. Request one at
-https://nvd.nist.gov/developers/request-an-api-key:
+If you get `permission denied`, run `bash setup_keys.sh` instead. `bash` runs the file directly,
+so it doesn't need execute permission.
 
-```bash
-read -rs -p "NVD_API_KEY: " k && printf 'NVD_API_KEY=%s\n' "$k" >> .env && unset k
-```
-
-What each part does:
-
-- `read -rs -p "..." k`: reads your input into a temporary variable `k`. `-r` keeps backslashes
-  as typed, `-s` hides what you type and keeps it out of your shell history, and `-p` sets the
-  prompt text.
-- `printf 'NAME=%s\n' "$k"`: writes one line, `NAME=<your key>`.
-- `> .env`: creates the file, or **replaces** it if it exists. Use it only for the first key.
-- `>> .env`: **adds** a line to the end of the file. Use it for every key after the first. Using
-  `>` here would erase the keys already saved.
-- `unset k`: removes the temporary variable from your shell.
-- `chmod 600 .env`: only your user account can read or write the file.
-
-To check which keys are saved, without printing them:
+To check which keys are saved later, without printing them:
 
 ```bash
 cut -d= -f1 .env
 ```
 
-`-d=` splits each line at `=`, and `-f1` prints only the first part (the variable name). You should
-see `JEV_API_KEY`, `GEMINI_API_KEY`, and `NVD_API_KEY` if you added it.
-
-To replace a key you already saved, delete its old line first, then add it again with `>>`.
-For example:
-
-```bash
-sed -i '' '/^GEMINI_API_KEY=/d' .env
-```
-
-`-i ''` edits the file in place (macOS form; on Linux use `-i` alone), and `/^GEMINI_API_KEY=/d`
-deletes the line that starts with `GEMINI_API_KEY=`.
+`-d=` splits each line at `=`, and `-f1` prints only the first part (the variable name).
 
 ## How to run
 
@@ -199,7 +174,7 @@ To use it:
 
 1. Paste the **System instruction** block into the model's system instructions.
 2. Turn on **structured output** (JSON) and paste the **Response schema** block as the schema.
-3. Set temperature to about **0.7**, so the three neutral paraphrases differ from each other.
+3. Use model `gemini-3.8-flash` and leave temperature at **1.0**, Google's default for Gemini 3. Lower values can cause looping, and 1.0 gives the three neutral paraphrases enough variety.
 4. Fill in the **User message template** with one description and send it. Send **only the
    description text**, with CVE IDs already replaced by `this vulnerability`. Never include the
    CVE ID, the CVSS vector or score, or the metric columns: Gemini would write toward the known label.
@@ -232,5 +207,6 @@ pilot/
 prompts/
   gemini_reword.md the Gemini prompt that writes variants for the full study (see above)
 data/              inputs and every raw Jev response (see above)
+setup_keys.sh      asks for your API keys and saves them to .env
 CLAUDE.md          the full pilot plan and ground rules
 ```
