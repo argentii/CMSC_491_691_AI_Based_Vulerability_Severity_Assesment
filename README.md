@@ -154,6 +154,34 @@ Critical 9.0–10.0.
 - What to look for is a metric moving **in one direction** consistently, for example alarmist wording raising C/I/A or lowering AC, while downplaying wording does the opposite.
 - With 5 CVEs these results are **descriptive only**. The pilot runs no significance tests.
 
+## Generating variants with Gemini (for the full study)
+
+The pilot's variants were written by hand. For the full study (about 300 CVEs × 6 rewrites),
+`prompts/gemini_reword.md` holds a prompt that makes Gemini write them. It is not automated yet:
+no script calls Gemini, so for now you use it by hand, for example in Google AI Studio
+(https://aistudio.google.com).
+
+For each CVE, Gemini returns a list of the facts relevant to each of the 8 metrics, plus 6 variants:
+`neutral_1`, `neutral_2`, `neutral_3`, `alarmist`, `downplaying` and `verbose`. Each variant comes
+with a fact-by-fact self-check.
+
+To use it:
+
+1. Paste the **System instruction** block into the model's system instructions.
+2. Turn on **structured output** (JSON) and paste the **Response schema** block as the schema.
+3. Set temperature to about **0.7**, so the three neutral paraphrases differ from each other.
+4. Fill in the **User message template** with one description and send it. Send **only the
+   description text**, with CVE IDs already replaced by `this vulnerability`. Never include the
+   CVE ID, the CVSS vector or score, or the metric columns: Gemini would write toward the known label.
+5. Run the checks listed at the end of the prompt file (versions kept, hedges kept, "remote" not
+   added or dropped, no rating words, no CVE IDs). Reject any variant that fails.
+6. Save the passing variants to `data/variants.jsonl` with `"approved": false`. Gemini's self-check
+   speeds up review but does not replace it: a person must approve each variant before
+   `run_variants.py` sends it to Jev. Check `verbose` most carefully, since longer text is where
+   new facts slip in.
+
+Record the Gemini model version and settings you used, so the variants can be reproduced.
+
 ## Project layout
 
 ```
@@ -171,6 +199,8 @@ pilot/
   report_notes.md  written findings and recommendation included in the report
   web.py           read-only web dashboard (stdlib http.server, no Jev calls)
   web/             dashboard frontend: index.html + app.js + style.css (no build step)
+prompts/
+  gemini_reword.md the Gemini prompt that writes variants for the full study (see above)
 data/              inputs and every raw Jev response (see above)
 CLAUDE.md          the full pilot plan and ground rules
 ```
