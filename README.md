@@ -14,6 +14,7 @@ This repo is the **pilot**. It answers three questions before a full study:
 
 - **Python 3.11+** (developed on 3.12)
 - **A TypeSafe API key**, for calling Jev
+- **A Gemini API key**, only for generating variants with `prompts/gemini_reword.md`. Get one at https://aistudio.google.com/apikey
 - *Optional:* **an NVD API key**. Without one, NVD allows 5 requests per 30 seconds, so `fetch_cves.py` is slower but still works. Request a free key at https://nvd.nist.gov/developers/request-an-api-key
 - Python packages (listed in `requirements.txt`):
 
@@ -36,30 +37,59 @@ python3 -m venv .venv
 
 ### Give it your keys
 
-The keys go in a file named `.env` in the repo root. `.env` is git-ignored and is never committed. Run this and paste your key at the prompt. Nothing appears on screen while you type or paste:
+The keys go in a file named `.env` in the repo root. `.env` is git-ignored and is never committed.
+Run each command from the repo root and paste your key at the prompt. Nothing appears on screen
+while you type or paste.
+
+**Jev (required).** Run this one first. It creates `.env`:
 
 ```bash
 read -rs -p "JEV_API_KEY: " k && printf 'JEV_API_KEY=%s\n' "$k" > .env && unset k && chmod 600 .env
 ```
 
-- `read -rs -p "..." k`: reads your input into the variable `k`. `-r` keeps backslashes as typed, `-s` hides what you type and keeps it out of your shell history, and `-p` sets the prompt text.
-- `printf ... > .env`: writes `JEV_API_KEY=<key>` to `.env`. `>` creates the file, or replaces it if it exists.
-- `unset k`: removes the temporary variable from your shell.
-- `chmod 600 .env`: only your user account can read or write the file.
+**Gemini (needed to generate variants).** Get a key at https://aistudio.google.com/apikey:
 
-Optional NVD key. Note `>>`, which adds a line instead of replacing the file:
+```bash
+read -rs -p "GEMINI_API_KEY: " k && printf 'GEMINI_API_KEY=%s\n' "$k" >> .env && unset k
+```
+
+**NVD (optional).** Without a key, `fetch_cves.py` is slower but still works. Request one at
+https://nvd.nist.gov/developers/request-an-api-key:
 
 ```bash
 read -rs -p "NVD_API_KEY: " k && printf 'NVD_API_KEY=%s\n' "$k" >> .env && unset k
 ```
 
-To check the keys are there without printing them:
+What each part does:
+
+- `read -rs -p "..." k`: reads your input into a temporary variable `k`. `-r` keeps backslashes
+  as typed, `-s` hides what you type and keeps it out of your shell history, and `-p` sets the
+  prompt text.
+- `printf 'NAME=%s\n' "$k"`: writes one line, `NAME=<your key>`.
+- `> .env`: creates the file, or **replaces** it if it exists. Use it only for the first key.
+- `>> .env`: **adds** a line to the end of the file. Use it for every key after the first. Using
+  `>` here would erase the keys already saved.
+- `unset k`: removes the temporary variable from your shell.
+- `chmod 600 .env`: only your user account can read or write the file.
+
+To check which keys are saved, without printing them:
 
 ```bash
 cut -d= -f1 .env
 ```
 
-`-d=` splits each line at `=`, and `-f1` prints only the first part (the variable name).
+`-d=` splits each line at `=`, and `-f1` prints only the first part (the variable name). You should
+see `JEV_API_KEY`, `GEMINI_API_KEY`, and `NVD_API_KEY` if you added it.
+
+To replace a key you already saved, delete its old line first, then add it again with `>>`.
+For example:
+
+```bash
+sed -i '' '/^GEMINI_API_KEY=/d' .env
+```
+
+`-i ''` edits the file in place (macOS form; on Linux use `-i` alone), and `/^GEMINI_API_KEY=/d`
+deletes the line that starts with `GEMINI_API_KEY=`.
 
 ## How to run
 
