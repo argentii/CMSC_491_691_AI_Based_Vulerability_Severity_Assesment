@@ -193,19 +193,283 @@ Pilot's approved downplaying (human-written), for comparison:
 
 ## CVE-2025-31984
 
-Model `None`, temperature 1.0, 2026-11-22, est. $0.000
+Model `gemini-3.8-flash`, temperature 1.0, 2026-11-23, est. $0.000
 
-**Call failed:** This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+**Original**
+
+> HCL BigFix Service Management (SM) is affected by a security misconfiguration due to a missing or insecure “X-Content-Type-Options” header.  This could allow browsers to perform MIME-type sniffing, potentially causing malicious content to be interpreted and executed incorrectly.
+
+**Gemini's fact list**
+
+| Metric | Fact |
+|---|---|
+| AV | not stated |
+| AC | no special conditions stated |
+| PR | not stated |
+| UI | not stated |
+| S | not stated |
+| C | not stated |
+| I | malicious content to be interpreted and executed incorrectly |
+| A | not stated |
+| hedges | could; potentially |
+| other | Product is HCL BigFix Service Management (SM); weakness is a security misconfiguration due to a missing or insecure “X-Content-Type-Options” header; mechanism involves browsers performing MIME-type sniffing. |
+
+**Pilot's approved fact list (human)**
+
+| Metric | Fact |
+|---|---|
+| AV | involves 'browsers' (a web application); 'remote' is not stated |
+| AC | no conditions stated beyond 'could'/'potentially' |
+| PR | not stated |
+| UI | browsers are involved; no explicit user action is stated |
+| S | the effect happens in the browser, not the server (implied, not stated) |
+| C/I/A | only stated outcome: 'malicious content to be interpreted and executed incorrectly'; no data theft, XSS, or takeover stated |
+| hedges | 'could allow', 'potentially causing' |
+| other | security misconfiguration: missing or insecure 'X-Content-Type-Options' header; enables MIME-type sniffing; HCL BigFix Service Management (SM) |
+
+### neutral_1 — PASS (restructured)
+
+> A missing or insecure “X-Content-Type-Options” header results in a security misconfiguration in HCL BigFix Service Management (SM). Consequently, browsers could perform MIME-type sniffing, potentially leading to malicious content being interpreted and executed incorrectly.
+
+- Gemini's notes: Reordered clauses to lead with the missing/insecure header.
+
+Pilot's approved neutral (human-written), for comparison:
+
+> A security misconfiguration in HCL BigFix Service Management (SM) stems from a missing or insecure “X-Content-Type-Options” header. As a result, browsers could perform MIME-type sniffing, which could potentially lead to malicious content being interpreted and executed incorrectly.
+
+### neutral_2 — PASS (restructured)
+
+> Due to an absent or insecure “X-Content-Type-Options” header, HCL BigFix Service Management (SM) exhibits a security misconfiguration. Because of this, MIME-type sniffing could be carried out by browsers, potentially resulting in incorrect interpretation and execution of malicious content.
+
+- Gemini's notes: Converted active voice to passive voice in impact clause.
+
+Pilot's approved neutral (human-written), for comparison:
+
+> A security misconfiguration in HCL BigFix Service Management (SM) stems from a missing or insecure “X-Content-Type-Options” header. As a result, browsers could perform MIME-type sniffing, which could potentially lead to malicious content being interpreted and executed incorrectly.
+
+### neutral_3 — PASS (restructured)
+
+> Browsers could perform MIME-type sniffing because HCL BigFix Service Management (SM) contains a security misconfiguration involving an insecure or missing “X-Content-Type-Options” header. This condition potentially causes malicious content to be incorrectly interpreted and executed.
+
+- Gemini's notes: Reordered sentences to lead with browser behavior.
+
+Pilot's approved neutral (human-written), for comparison:
+
+> A security misconfiguration in HCL BigFix Service Management (SM) stems from a missing or insecure “X-Content-Type-Options” header. As a result, browsers could perform MIME-type sniffing, which could potentially lead to malicious content being interpreted and executed incorrectly.
+
+### alarmist — PASS (restructured)
+
+> Warning: HCL BigFix Service Management (SM) is compromised by a dangerous security misconfiguration due to a missing or insecure “X-Content-Type-Options” header! This could allow browsers to perform MIME-type sniffing, potentially causing malicious content to be interpreted and executed incorrectly, demanding immediate attention.
+
+- Tone words added: Warning:, compromised by a, dangerous, !, demanding immediate attention
+- Gemini's notes: Added urgent framing without introducing new technical impacts or omitting hedges.
+
+Pilot's approved alarmist (human-written), for comparison:
+
+> Security alert for HCL BigFix Service Management (SM): a security misconfiguration leaves the “X-Content-Type-Options” header missing or insecure. This could open the door for browsers to perform MIME-type sniffing, potentially causing malicious content to be interpreted and executed incorrectly, a dangerous gap that should not be ignored.
+
+### downplaying — PASS (restructured)
+
+> HCL BigFix Service Management (SM) merely has a minor security misconfiguration due to an insecure or missing “X-Content-Type-Options” header. At most, this could allow browsers to perform MIME-type sniffing, only potentially causing malicious content to be interpreted and executed incorrectly.
+
+- Tone words added: merely has a, minor, At most,, only
+- Gemini's notes: Added minimizing qualifiers without removing stated facts or changing hedges.
+
+Pilot's approved downplaying (human-written), for comparison:
+
+> HCL BigFix Service Management (SM) has a small security misconfiguration: a missing or insecure “X-Content-Type-Options” header. This could allow browsers to perform MIME-type sniffing, which might potentially cause malicious content to be interpreted and executed incorrectly.
+
+### verbose — PASS (restructured)
+
+> The software product known as HCL BigFix Service Management (SM) is subject to a security misconfiguration that arises specifically from the presence of an insecure “X-Content-Type-Options” header or from that header being missing entirely. As a direct consequence of this configuration flaw, it could be possible for web browsers to carry out MIME-type sniffing, an outcome that potentially causes content that is malicious to be processed, interpreted, and executed in an incorrect manner.
+
+- Gemini's notes: Expanded wording through thorough phrasing while keeping exact facts and hedges intact.
 
 ## CVE-2026-44247
 
-Model `None`, temperature 1.0, 2026-11-22, est. $0.000
+Model `gemini-3.8-flash`, temperature 1.0, 2026-11-23, est. $0.000
 
-**Call failed:** This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+**Original**
+
+> Volcano is a Kubernetes-native batch scheduling system. Prior to v1.14.2, v1.13.3, and v1.12.4, the Volcano webhook server does not enforce a size limit on incoming HTTP request bodies. Any in-cluster pod that can reach the webhook endpoint may send an arbitrarily large request body, potentially causing the webhook server to be killed by OOM. All Volcano deployments with the webhook server exposed to in-cluster traffic are affected. This vulnerability is fixed in v1.14.2, v1.13.3, and v1.12.4.
+
+**Gemini's fact list**
+
+| Metric | Fact |
+|---|---|
+| AV | Any in-cluster pod that can reach the webhook endpoint, webhook server exposed to in-cluster traffic |
+| AC | no special conditions stated |
+| PR | Any in-cluster pod that can reach the webhook endpoint |
+| UI | no action by another user is mentioned |
+| S | not stated |
+| C | not stated |
+| I | not stated |
+| A | potentially causing the webhook server to be killed by OOM |
+| hedges | may; potentially |
+| other | Volcano is a Kubernetes-native batch scheduling system. Prior to v1.14.2, v1.13.3, and v1.12.4, the Volcano webhook server does not enforce a size limit on incoming HTTP request bodies. Arbitrarily large request body can be sent. All Volcano deployments with the webhook server exposed to in-cluster traffic are affected. Fixed in v1.14.2, v1.13.3, and v1.12.4. |
+
+**Pilot's approved fact list (human)**
+
+| Metric | Fact |
+|---|---|
+| AV | 'any in-cluster pod that can reach the webhook endpoint'; 'deployments with the webhook server exposed to in-cluster traffic' |
+| AC | no special conditions; 'any' pod |
+| PR | none stated (any in-cluster pod) |
+| UI | no action by another user is mentioned |
+| S | outcome stated for the webhook server only |
+| C/I/A | only stated outcome: webhook server 'killed by OOM' (A); no data access or modification stated |
+| hedges | 'may send', 'potentially causing' |
+| other | no size limit on incoming HTTP request bodies; 'arbitrarily large' body; all such deployments affected; versions before v1.14.2, v1.13.3, v1.12.4; fixed in those |
+
+### neutral_1 — PASS (restructured)
+
+> The Volcano webhook server lacks an incoming HTTP request body size limit prior to versions v1.14.2, v1.13.3, and v1.12.4. Volcano, a Kubernetes-native batch scheduling system, is affected across all deployments where the webhook server is exposed to in-cluster traffic. Any in-cluster pod capable of reaching the webhook endpoint may transmit an arbitrarily large request body, potentially causing the webhook server to be killed by OOM. Versions v1.14.2, v1.13.3, and v1.12.4 fix this vulnerability.
+
+- Gemini's notes: Paraphrased with altered sentence order starting with the webhook server behavior.
+
+Pilot's approved neutral (human-written), for comparison:
+
+> Volcano, a batch scheduling system built for Kubernetes, has a webhook server that, in versions before v1.14.2, v1.13.3, and v1.12.4, sets no size limit on incoming HTTP request bodies. Any pod inside the cluster that can reach the webhook endpoint may send a request body of arbitrary size, which could potentially get the webhook server killed by OOM. Every Volcano deployment whose webhook server is exposed to in-cluster traffic is affected. Versions v1.14.2, v1.13.3, and v1.12.4 fix the problem.
+
+### neutral_2 — PASS (restructured)
+
+> An arbitrarily large request body may be sent by any in-cluster pod that can reach the webhook endpoint in Volcano, a Kubernetes-native batch scheduling system. Prior to v1.14.2, v1.13.3, and v1.12.4, size limits are not enforced by the Volcano webhook server on incoming HTTP request bodies, potentially causing the webhook server to be killed by OOM. This impacts all Volcano deployments with the webhook server exposed to in-cluster traffic. The issue is resolved in v1.14.2, v1.13.3, and v1.12.4.
+
+- Gemini's notes: Paraphrased starting with the request body action.
+
+Pilot's approved neutral (human-written), for comparison:
+
+> Volcano, a batch scheduling system built for Kubernetes, has a webhook server that, in versions before v1.14.2, v1.13.3, and v1.12.4, sets no size limit on incoming HTTP request bodies. Any pod inside the cluster that can reach the webhook endpoint may send a request body of arbitrary size, which could potentially get the webhook server killed by OOM. Every Volcano deployment whose webhook server is exposed to in-cluster traffic is affected. Versions v1.14.2, v1.13.3, and v1.12.4 fix the problem.
+
+### neutral_3 — PASS (restructured)
+
+> Before versions v1.14.2, v1.13.3, and v1.12.4, the webhook server in the Kubernetes-native batch scheduling system Volcano omits size limits for incoming HTTP request bodies. In every Volcano deployment where this webhook server is exposed to in-cluster traffic, any in-cluster pod able to reach the webhook endpoint may submit an arbitrarily large request body. This potentially causes the webhook server to be killed by OOM. Remediations are present in v1.14.2, v1.13.3, and v1.12.4.
+
+- Gemini's notes: Paraphrased starting with the version condition.
+
+Pilot's approved neutral (human-written), for comparison:
+
+> Volcano, a batch scheduling system built for Kubernetes, has a webhook server that, in versions before v1.14.2, v1.13.3, and v1.12.4, sets no size limit on incoming HTTP request bodies. Any pod inside the cluster that can reach the webhook endpoint may send a request body of arbitrary size, which could potentially get the webhook server killed by OOM. Every Volcano deployment whose webhook server is exposed to in-cluster traffic is affected. Versions v1.14.2, v1.13.3, and v1.12.4 fix the problem.
+
+### alarmist — PASS (tone_words_only)
+
+> Warning: dangerous flaw in Volcano, a Kubernetes-native batch scheduling system! Prior to v1.14.2, v1.13.3, and v1.12.4, the Volcano webhook server fails to enforce any size limit whatsoever on incoming HTTP request bodies. Absolutely any in-cluster pod that can reach the webhook endpoint may send an arbitrarily large request body, potentially causing the webhook server to be killed by OOM. Every single Volcano deployment with the webhook server exposed to in-cluster traffic is affected and at risk. This vulnerability is fixed in v1.14.2, v1.13.3, and v1.12.4; upgrade immediately.
+
+- Tone words added: Warning:, dangerous flaw, fails to, whatsoever, Absolutely, Every single, and at risk, upgrade immediately
+- Gemini's notes: Added urgent and alarmist framing without introducing unstated impacts or altering scope.
+
+Pilot's approved alarmist (human-written), for comparison:
+
+> Volcano, the Kubernetes-native batch scheduling system, ships a webhook server that, before v1.14.2, v1.13.3, and v1.12.4, enforces no size limit whatsoever on incoming HTTP request bodies. Any in-cluster pod that can reach the webhook endpoint may slam it with an arbitrarily large request body, potentially getting the webhook server killed by OOM. Every single Volcano deployment with the webhook server exposed to in-cluster traffic is affected. Upgrade to v1.14.2, v1.13.3, or v1.12.4 immediately.
+
+### downplaying — PASS (tone_words_only)
+
+> Volcano is a Kubernetes-native batch scheduling system. Prior to v1.14.2, v1.13.3, and v1.12.4, the Volcano webhook server merely does not enforce a size limit on incoming HTTP request bodies. Only an in-cluster pod that can reach the webhook endpoint may send an arbitrarily large request body, potentially causing the webhook server to be killed by OOM. Only Volcano deployments with the webhook server exposed to in-cluster traffic are affected. This modest vulnerability is already fixed in v1.14.2, v1.13.3, and v1.12.4.
+
+- Tone words added: merely, Only, modest, already
+- Gemini's notes: Used minimizing qualifiers without removing technical requirements or consequences.
+
+Pilot's approved downplaying (human-written), for comparison:
+
+> Volcano, a Kubernetes-native batch scheduling system, had a modest robustness gap in its webhook server before v1.14.2, v1.13.3, and v1.12.4: it did not enforce a size limit on incoming HTTP request bodies. Any in-cluster pod that can reach the webhook endpoint may send an arbitrarily large request body, which could potentially lead to the webhook server being killed by OOM. This concerns all Volcano deployments with the webhook server exposed to in-cluster traffic, and it is fixed in v1.14.2, v1.13.3, and v1.12.4.
+
+### verbose — PASS (restructured)
+
+> The software component Volcano functions as a Kubernetes-native batch scheduling system. In versions released prior to v1.14.2, v1.13.3, and v1.12.4, the Volcano webhook server component does not establish or enforce any restriction regarding the size limit of incoming HTTP request bodies received by the service. As a consequence of this absence of size restriction, any pod situated in-cluster that possesses network reachability to the webhook endpoint may transmit an arbitrarily large request body, potentially causing the webhook server process to be killed by OOM. The issue impacts all Volcano deployments wherein the webhook server is exposed to in-cluster traffic. This vulnerability has been addressed and fixed in versions v1.14.2, v1.13.3, and v1.12.4.
+
+- Gemini's notes: Expanded sentence structures and repeated underlying facts without introducing unstated technical claims.
 
 ## CVE-2026-7663
 
-Model `None`, temperature 1.0, 2026-11-22, est. $0.000
+Model `gemini-3.8-flash`, temperature 1.0, 2026-11-23, est. $0.000
 
-**Call failed:** This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+**Original**
+
+> IBM Langflow OSS 1.0.0 through 1.9.6 could allow unauthenticated attackers to access protected MCP project resources and execute MCP operations due to improper authorization enforcement in the Streamable MCP transport endpoint.
+
+**Gemini's fact list**
+
+| Metric | Fact |
+|---|---|
+| AV | Streamable MCP transport endpoint |
+| AC | no special conditions stated |
+| PR | unauthenticated attackers |
+| UI | no action by another user is mentioned |
+| S | not stated |
+| C | access protected MCP project resources |
+| I | execute MCP operations |
+| A | not stated |
+| hedges | could allow |
+| other | IBM Langflow OSS 1.0.0 through 1.9.6; improper authorization enforcement in the Streamable MCP transport endpoint |
+
+**Pilot's approved fact list (human)**
+
+| Metric | Fact |
+|---|---|
+| AV | via 'the Streamable MCP transport endpoint'; 'remote' is not stated |
+| AC | no special conditions stated |
+| PR | 'unauthenticated attackers' |
+| UI | no action by another user is mentioned |
+| S | not stated |
+| C/I/A | 'access protected MCP project resources' (C) and 'execute MCP operations' (I); availability not stated; 'MCP operations' is not code execution |
+| hedges | 'could allow' |
+| other | cause: improper authorization enforcement; IBM Langflow OSS 1.0.0 through 1.9.6 |
+
+### neutral_1 — PASS (restructured)
+
+> Due to improper authorization enforcement in the Streamable MCP transport endpoint, IBM Langflow OSS 1.0.0 through 1.9.6 could allow unauthenticated attackers to access protected MCP project resources and execute MCP operations.
+
+- Gemini's notes: Reordered clauses by leading with the root cause.
+
+Pilot's approved neutral (human-written), for comparison:
+
+> Because the Streamable MCP transport endpoint enforces authorization improperly, IBM Langflow OSS versions 1.0.0 through 1.9.6 could let attackers who are not authenticated access protected MCP project resources and execute MCP operations.
+
+### neutral_2 — PASS (restructured)
+
+> Unauthenticated attackers could access protected MCP project resources and execute MCP operations in IBM Langflow OSS 1.0.0 through 1.9.6 because of improper authorization enforcement within the Streamable MCP transport endpoint.
+
+- Gemini's notes: Leads with the attacker perspective.
+
+Pilot's approved neutral (human-written), for comparison:
+
+> Because the Streamable MCP transport endpoint enforces authorization improperly, IBM Langflow OSS versions 1.0.0 through 1.9.6 could let attackers who are not authenticated access protected MCP project resources and execute MCP operations.
+
+### neutral_3 — PASS (restructured)
+
+> In IBM Langflow OSS 1.0.0 through 1.9.6, protected MCP project resources could be accessed and MCP operations could be executed by unauthenticated attackers, resulting from improper authorization enforcement in the Streamable MCP transport endpoint.
+
+- Gemini's notes: Uses passive voice for the outcomes.
+
+Pilot's approved neutral (human-written), for comparison:
+
+> Because the Streamable MCP transport endpoint enforces authorization improperly, IBM Langflow OSS versions 1.0.0 through 1.9.6 could let attackers who are not authenticated access protected MCP project resources and execute MCP operations.
+
+### alarmist — PASS (tone_words_only)
+
+> Warning: IBM Langflow OSS 1.0.0 through 1.9.6 contains a dangerous flaw where it could allow unauthenticated attackers to directly access protected MCP project resources and execute MCP operations due to improper authorization enforcement in the Streamable MCP transport endpoint.
+
+- Tone words added: Warning:, dangerous flaw where, directly
+- Gemini's notes: Added alarmist framing words without modifying facts or scope.
+
+Pilot's approved alarmist (human-written), for comparison:
+
+> Alarming flaw in IBM Langflow OSS 1.0.0 through 1.9.6: broken authorization enforcement in the Streamable MCP transport endpoint could let unauthenticated attackers walk right in, access protected MCP project resources, and execute MCP operations.
+
+### downplaying — PASS (tone_words_only)
+
+> IBM Langflow OSS 1.0.0 through 1.9.6 could allow unauthenticated attackers to access protected MCP project resources and execute MCP operations simply due to an authorization enforcement imperfection in the Streamable MCP transport endpoint.
+
+- Tone words added: simply due to, imperfection
+- Gemini's notes: Added minimizing phrasing around the improper enforcement.
+
+Pilot's approved downplaying (human-written), for comparison:
+
+> IBM Langflow OSS 1.0.0 through 1.9.6 has a narrow issue in how one endpoint, the Streamable MCP transport endpoint, enforces authorization. Because of it, unauthenticated attackers could access protected MCP project resources and execute MCP operations.
+
+### verbose — PASS (restructured)
+
+> Within IBM Langflow OSS versions 1.0.0 through 1.9.6, a weakness exists involving improper authorization enforcement situated in the Streamable MCP transport endpoint. As a consequence of this enforcement defect in the endpoint, the software could allow unauthenticated attackers to gain unauthorized access to protected MCP project resources and could permit these attackers to execute MCP operations.
+
+- Gemini's notes: Expanded sentence structure and doubled word count while strictly preserving facts and hedges.
 
