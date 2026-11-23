@@ -83,6 +83,8 @@ cd pilot
 | 5. Variants | `../.venv/bin/python run_variants.py [--yes]` | Yes, approved variants × 8 (pilot: 5 × 3 × 8 = 120) | Sends each variant in `data/variants.jsonl` that is marked `"approved": true`, 8 times. Shows the call count and asks first, unless you pass `--yes`. If interrupted, rerunning it skips the calls already done. |
 | 6. Report | `../.venv/bin/python summarize.py` | No | Builds every table from `data/*.jsonl` and writes `pilot_report.md`. The written findings and recommendation come from `pilot/report_notes.md`. |
 | Dashboard | `../.venv/bin/python web.py [--host HOST] [--port PORT]` | No | Read-only web dashboard of the saved data (see below). Keeps running until you stop it with Ctrl-C. |
+| Full study: pick CVEs | `../.venv/bin/python select_cves.py [--force]` | No | Picks the 300 full-study CVEs into `data/study_cves.jsonl` (see [Generating variants](#generating-variants-with-gemini-for-the-full-study)). |
+| Full study: variants | `../.venv/bin/python reword.py --input ../data/study_cves.jsonl [--yes]` | No (calls Gemini, 1 per CVE) | Writes 6 variants per CVE with Gemini. Asks first, resumes if rerun. |
 
 Every script that calls Jev shows the call count before it runs. At the current price ($0.042 per
 million input tokens, with output free), one call costs about $0.00006. The whole pilot of about 240
@@ -161,31 +163,61 @@ Critical 9.0–10.0.
 
 ## Generating variants with Gemini (for the full study)
 
-The pilot's variants were written by hand. For the full study (about 300 CVEs × 6 rewrites),
-`prompts/gemini_reword.md` holds a prompt that makes Gemini write them. It is not automated yet:
-no script calls Gemini, so for now you use it by hand, for example in Google AI Studio
-(https://aistudio.google.com).
+The pilot's variants were written by hand. For the full study, `pilot/reword.py` asks Gemini to
+write them, using the prompt in `prompts/gemini_reword.md`. For each CVE, Gemini returns a list of
+the facts relevant to each of the 8 metrics, plus 6 variants: `neutral_1`, `neutral_2`,
+`neutral_3`, `alarmist`, `downplaying` and `verbose`, each with a fact-by-fact self-check.
 
-For each CVE, Gemini returns a list of the facts relevant to each of the 8 metrics, plus 6 variants:
-`neutral_1`, `neutral_2`, `neutral_3`, `alarmist`, `downplaying` and `verbose`. Each variant comes
-with a fact-by-fact self-check.
+You need `GEMINI_API_KEY` in `.env` (see [Provide necessary keys](#provide-necessary-keys)).
+The model is set in `pilot/config.py`: `gemini-3.8-flash` at temperature 1.0, which works on a
+free-tier key. Run everything from the `pilot/` folder.
 
-To use it:
+**1. Pick the 300 CVEs** (no API calls):
 
-1. Paste the **System instruction** block into the model's system instructions.
-2. Turn on **structured output** (JSON) and paste the **Response schema** block as the schema.
-3. Use model `gemini-3.8-flash` and leave temperature at **1.0**, Google's default for Gemini 3. Lower values can cause looping, and 1.0 gives the three neutral paraphrases enough variety.
-4. Fill in the **User message template** with one description and send it. Send **only the
-   description text**, with CVE IDs already replaced by `this vulnerability`. Never include the
-   CVE ID, the CVSS vector or score, or the metric columns: Gemini would write toward the known label.
-5. Run the checks listed at the end of the prompt file (versions kept, hedges kept, "remote" not
-   added or dropped, no rating words, no CVE IDs). Reject any variant that fails.
-6. Save the passing variants to `data/variants.jsonl` with `"approved": false`. Gemini's self-check
-   speeds up review but does not replace it: a person must approve each variant before
-   `run_variants.py` sends it to Jev. Check `verbose` most carefully, since longer text is where
-   new facts slip in.
+```bash
+../.venv/bin/python select_cves.py
+```
 
-Record the Gemini model version and settings you used, so the variants can be reproduced.
+This writes `data/study_cves.jsonl`: 30 Low + 90 each of Medium, High and Critical from
+`cleaned_dataset/cvss_framing_dataset.csv`. It keeps only CVEs with an NVD-scored label that no other
+source disagrees with, leaves out descriptions that contain rating words (low/medium/high/critical)
+or IDs such as `VDB-…` or `GHSA-…`, and takes one CVE per repository. It uses a fixed random seed,
+so it always picks the same 300. It refuses to overwrite an existing file unless you add `--force`,
+so the CVE set can't change halfway through a study.
+
+**2. Generate the variants** (300 Gemini calls, about 1–4 minutes each, so several hours):
+
+```bash
+caffeinate -i ../.venv/bin/python reword.py --input ../data/study_cves.jsonl
+```
+
+- `caffeinate -i` is a built-in macOS command that keeps the Mac awake until the script finishes.
+- `--input` is the file of CVEs to rewrite. Without it, `reword.py` reruns the 5 pilot CVEs, for
+  comparison with the hand-written variants.
+- It shows the number of calls and the estimated cost, and asks `Proceed? [y/N]` first. Add
+  `--yes` to skip the question.
+- Only the description is sent. The CVE ID, CVSS vector, score and source code never are.
+- Every raw response is saved to `data/gemini_variants_study_cves.jsonl`, with `"approved": false`.
+- **Google's "high demand" (503) errors** are handled for you. Each call is retried 4 times.
+  A CVE that still fails is tried again at the end of the run. After 3 such failures in a row, the
+  script pauses 5 minutes before going on, and after 6 pauses with no success it stops.
+- **If it stops** (Ctrl-C, the laptop sleeps, a long Google outage, or the free tier's daily
+  limit), run the same command again. It skips the CVEs that already succeeded and retries
+  the rest. The last line it prints says how many are still missing.
+
+**3. Review** `gemini_review_study_cves.md`. It shows each original description, Gemini's fact
+list, and the 6 variants, marked PASS or FAIL by the automatic checks (versions kept, hedges kept,
+"remote" not added or dropped, no rating words, no CVE IDs). A PASS is not an approval. A person
+must check that each variant keeps every fact and adds none, especially `verbose`, where new
+facts slip in most easily. To rebuild the review file without making any calls, run:
+
+```bash
+../.venv/bin/python reword.py --input ../data/study_cves.jsonl --review-only
+```
+
+To try the prompt by hand instead (for example in Google AI Studio), paste the **System
+instruction** block as the system instructions, the **Response schema** block as the structured
+output schema, and the **User message template** filled in with one description.
 
 ## Project layout
 
@@ -202,6 +234,8 @@ pilot/
   run_variants.py  Step 5: approved variants
   summarize.py     Step 6: writes pilot_report.md
   report_notes.md  written findings and recommendation included in the report
+  select_cves.py   picks the 300 full-study CVEs from cleaned_dataset/
+  reword.py        writes variants with Gemini (prompt in prompts/gemini_reword.md)
   web.py           read-only web dashboard (stdlib http.server, no Jev calls)
   web/             dashboard frontend: index.html + app.js + style.css (no build step)
 prompts/

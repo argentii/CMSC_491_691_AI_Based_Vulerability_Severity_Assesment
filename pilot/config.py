@@ -27,9 +27,19 @@ NVD_API = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 GEMINI_MODEL = "gemini-3.8-flash"
 GEMINI_TEMPERATURE = 1.0  # Google's default for Gemini 3; lower values can cause looping
 GEMINI_MAX_RETRIES = 4
+# If this many CVEs in a row fail with a server error (e.g. 503 "high demand") even after their
+# retries, pause before trying more. Give up after this many pauses with no success in between.
+GEMINI_OVERLOAD_STREAK = 3
+GEMINI_OVERLOAD_PAUSE_S = 300        # 5 minutes
+GEMINI_OVERLOAD_MAX_PAUSES = 6       # about 30 minutes of pauses in a row, then stop
 # Pricing used only for the cost estimate (USD per million tokens; thinking tokens bill as output).
 # 0 because the key is on the free tier. Set real prices here if billing is turned on.
 GEMINI_PRICE_IN, GEMINI_PRICE_OUT = 0.0, 0.0
 PROMPT_PATH = ROOT / "prompts" / "gemini_reword.md"
 GEMINI_PATH = DATA / "gemini_variants.jsonl"   # one line per Gemini call: raw + parsed + checks
 GEMINI_REVIEW_PATH = ROOT / "gemini_review.md"  # side-by-side for human review
+
+# --- Full-study CVE selection (select_cves.py) ---
+DATASET_PATH = ROOT / "cleaned_dataset" / "cvss_framing_dataset.csv"
+STUDY_CVES_PATH = DATA / "study_cves.jsonl"
+SELECT_SEED = 491  # fixed, so the selection can be reproduced exactly
