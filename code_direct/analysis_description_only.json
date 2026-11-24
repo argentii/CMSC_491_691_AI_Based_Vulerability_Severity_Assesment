@@ -1,0 +1,7739 @@
+{
+  "model": "jev-1.14.0",
+  "condition": "description_only_direct",
+  "evidence": "description_only",
+  "human_review_required": false,
+  "notes": "Descriptive results. Rewrites are not human-verified; automatic check failures are retained, not excluded.",
+  "summary": {
+    "selected_cves": 15,
+    "description_groups": 105,
+    "groups_with_results": 105,
+    "valid_repeats": 525,
+    "failed_attempts": 0,
+    "nvd_accuracy": 0.49142857142857144,
+    "rewrites_with_check_failures": 1,
+    "comparable_pairs": 90,
+    "modal_flip_rate": 0.2222222222222222
+  },
+  "groups": [
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "original",
+      "variant_id": "CVE-2015-8959:original",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.10800000000000001,
+          "min": 0.1,
+          "max": 0.12
+        },
+        "Medium": {
+          "mean": 0.502,
+          "min": 0.48,
+          "max": 0.53
+        },
+        "High": {
+          "mean": 0.372,
+          "min": 0.34,
+          "max": 0.39
+        },
+        "Critical": {
+          "mean": 0.018,
+          "min": 0.01,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "original",
+      "variant_id": "CVE-2016-2324:original",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.05,
+          "min": 0.04,
+          "max": 0.06
+        },
+        "High": {
+          "mean": 0.36,
+          "min": 0.33,
+          "max": 0.39
+        },
+        "Critical": {
+          "mean": 0.58,
+          "min": 0.55,
+          "max": 0.61
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "original",
+      "variant_id": "CVE-2018-14360:original",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.026000000000000002,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "Medium": {
+          "mean": 0.164,
+          "min": 0.14,
+          "max": 0.17
+        },
+        "High": {
+          "mean": 0.558,
+          "min": 0.54,
+          "max": 0.57
+        },
+        "Critical": {
+          "mean": 0.252,
+          "min": 0.23,
+          "max": 0.27
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "original",
+      "variant_id": "CVE-2019-13224:original",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.16,
+          "min": 0.15,
+          "max": 0.17
+        },
+        "High": {
+          "mean": 0.596,
+          "min": 0.59,
+          "max": 0.6
+        },
+        "Critical": {
+          "mean": 0.23399999999999999,
+          "min": 0.22,
+          "max": 0.25
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "original",
+      "variant_id": "CVE-2020-12607:original",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.004,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.4,
+          "min": 0.38,
+          "max": 0.41
+        },
+        "Medium": {
+          "mean": 0.462,
+          "min": 0.45,
+          "max": 0.49
+        },
+        "High": {
+          "mean": 0.124,
+          "min": 0.11,
+          "max": 0.14
+        },
+        "Critical": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "original",
+      "variant_id": "CVE-2020-36766:original",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.6940000000000001,
+          "min": 0.67,
+          "max": 0.73
+        },
+        "Medium": {
+          "mean": 0.26,
+          "min": 0.23,
+          "max": 0.28
+        },
+        "High": {
+          "mean": 0.038,
+          "min": 0.03,
+          "max": 0.05
+        },
+        "Critical": {
+          "mean": 0.008,
+          "min": 0.0,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "original",
+      "variant_id": "CVE-2021-23639:original",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.05,
+          "min": 0.04,
+          "max": 0.06
+        },
+        "High": {
+          "mean": 0.254,
+          "min": 0.23,
+          "max": 0.27
+        },
+        "Critical": {
+          "mean": 0.686,
+          "min": 0.66,
+          "max": 0.72
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "original",
+      "variant_id": "CVE-2022-0819:original",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.012,
+          "min": 0.01,
+          "max": 0.02
+        },
+        "Low": {
+          "mean": 0.022,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "Medium": {
+          "mean": 0.10600000000000001,
+          "min": 0.1,
+          "max": 0.12
+        },
+        "High": {
+          "mean": 0.388,
+          "min": 0.38,
+          "max": 0.4
+        },
+        "Critical": {
+          "mean": 0.472,
+          "min": 0.45,
+          "max": 0.49
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "original",
+      "variant_id": "CVE-2022-23649:original",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.04,
+          "min": 0.04,
+          "max": 0.04
+        },
+        "Medium": {
+          "mean": 0.302,
+          "min": 0.28,
+          "max": 0.31
+        },
+        "High": {
+          "mean": 0.512,
+          "min": 0.51,
+          "max": 0.52
+        },
+        "Critical": {
+          "mean": 0.146,
+          "min": 0.14,
+          "max": 0.16
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "original",
+      "variant_id": "CVE-2022-25319:original",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.004,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.154,
+          "min": 0.13,
+          "max": 0.17
+        },
+        "Medium": {
+          "mean": 0.41600000000000004,
+          "min": 0.4,
+          "max": 0.43
+        },
+        "High": {
+          "mean": 0.362,
+          "min": 0.35,
+          "max": 0.38
+        },
+        "Critical": {
+          "mean": 0.064,
+          "min": 0.06,
+          "max": 0.08
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "original",
+      "variant_id": "CVE-2022-2571:original",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.036,
+          "min": 0.03,
+          "max": 0.04
+        },
+        "Medium": {
+          "mean": 0.18,
+          "min": 0.16,
+          "max": 0.2
+        },
+        "High": {
+          "mean": 0.5,
+          "min": 0.49,
+          "max": 0.51
+        },
+        "Critical": {
+          "mean": 0.274,
+          "min": 0.24,
+          "max": 0.3
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "original",
+      "variant_id": "CVE-2022-36021:original",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 4,
+        "High": 1
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": false,
+      "modal_agreement": 0.8,
+      "nvd_matching_repeats": 4,
+      "nvd_accuracy": 0.8,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.088,
+          "min": 0.08,
+          "max": 0.1
+        },
+        "Medium": {
+          "mean": 0.45200000000000007,
+          "min": 0.43,
+          "max": 0.46
+        },
+        "High": {
+          "mean": 0.414,
+          "min": 0.39,
+          "max": 0.45
+        },
+        "Critical": {
+          "mean": 0.046,
+          "min": 0.04,
+          "max": 0.05
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "original",
+      "variant_id": "CVE-2022-39368:original",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.036,
+          "min": 0.03,
+          "max": 0.04
+        },
+        "Medium": {
+          "mean": 0.292,
+          "min": 0.26,
+          "max": 0.31
+        },
+        "High": {
+          "mean": 0.558,
+          "min": 0.54,
+          "max": 0.58
+        },
+        "Critical": {
+          "mean": 0.11400000000000002,
+          "min": 0.1,
+          "max": 0.14
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "original",
+      "variant_id": "CVE-2023-39978:original",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.158,
+          "min": 0.15,
+          "max": 0.17
+        },
+        "Medium": {
+          "mean": 0.524,
+          "min": 0.51,
+          "max": 0.54
+        },
+        "High": {
+          "mean": 0.302,
+          "min": 0.29,
+          "max": 0.31
+        },
+        "Critical": {
+          "mean": 0.016,
+          "min": 0.01,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "original",
+      "variant_id": "CVE-2023-4681:original",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": null,
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.22999999999999998,
+          "min": 0.22,
+          "max": 0.24
+        },
+        "Medium": {
+          "mean": 0.48,
+          "min": 0.47,
+          "max": 0.49
+        },
+        "High": {
+          "mean": 0.25,
+          "min": 0.24,
+          "max": 0.27
+        },
+        "Critical": {
+          "mean": 0.03,
+          "min": 0.03,
+          "max": 0.03
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2015-8959:openrouter:neutral_1",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.126,
+          "min": 0.1,
+          "max": 0.14
+        },
+        "Medium": {
+          "mean": 0.5,
+          "min": 0.48,
+          "max": 0.52
+        },
+        "High": {
+          "mean": 0.358,
+          "min": 0.32,
+          "max": 0.39
+        },
+        "Critical": {
+          "mean": 0.016,
+          "min": 0.01,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2015-8959:openrouter:neutral_2",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.118,
+          "min": 0.09,
+          "max": 0.13
+        },
+        "Medium": {
+          "mean": 0.49800000000000005,
+          "min": 0.47,
+          "max": 0.53
+        },
+        "High": {
+          "mean": 0.364,
+          "min": 0.32,
+          "max": 0.42
+        },
+        "Critical": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2015-8959:openrouter:neutral_3",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.10800000000000001,
+          "min": 0.1,
+          "max": 0.11
+        },
+        "Medium": {
+          "mean": 0.47000000000000003,
+          "min": 0.46,
+          "max": 0.49
+        },
+        "High": {
+          "mean": 0.392,
+          "min": 0.38,
+          "max": 0.4
+        },
+        "Critical": {
+          "mean": 0.03,
+          "min": 0.02,
+          "max": 0.04
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "alarmist",
+      "variant_id": "CVE-2015-8959:openrouter:alarmist",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.06,
+          "min": 0.06,
+          "max": 0.06
+        },
+        "Medium": {
+          "mean": 0.4,
+          "min": 0.38,
+          "max": 0.43
+        },
+        "High": {
+          "mean": 0.49000000000000005,
+          "min": 0.46,
+          "max": 0.51
+        },
+        "Critical": {
+          "mean": 0.05,
+          "min": 0.05,
+          "max": 0.05
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "downplaying",
+      "variant_id": "CVE-2015-8959:openrouter:downplaying",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 1,
+        "Medium": 4
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": false,
+      "modal_agreement": 0.8,
+      "nvd_matching_repeats": 4,
+      "nvd_accuracy": 0.8,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.396,
+          "min": 0.34,
+          "max": 0.46
+        },
+        "Medium": {
+          "mean": 0.45599999999999996,
+          "min": 0.41,
+          "max": 0.5
+        },
+        "High": {
+          "mean": 0.144,
+          "min": 0.13,
+          "max": 0.16
+        },
+        "Critical": {
+          "mean": 0.004,
+          "min": 0.0,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "verbose",
+      "variant_id": "CVE-2015-8959:openrouter:verbose",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.144,
+          "min": 0.13,
+          "max": 0.15
+        },
+        "Medium": {
+          "mean": 0.48200000000000004,
+          "min": 0.47,
+          "max": 0.49
+        },
+        "High": {
+          "mean": 0.35,
+          "min": 0.34,
+          "max": 0.36
+        },
+        "Critical": {
+          "mean": 0.024,
+          "min": 0.02,
+          "max": 0.03
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2016-2324:openrouter:neutral_1",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.033999999999999996,
+          "min": 0.03,
+          "max": 0.04
+        },
+        "High": {
+          "mean": 0.314,
+          "min": 0.3,
+          "max": 0.34
+        },
+        "Critical": {
+          "mean": 0.642,
+          "min": 0.62,
+          "max": 0.66
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2016-2324:openrouter:neutral_2",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.04,
+          "min": 0.03,
+          "max": 0.05
+        },
+        "High": {
+          "mean": 0.348,
+          "min": 0.33,
+          "max": 0.37
+        },
+        "Critical": {
+          "mean": 0.602,
+          "min": 0.57,
+          "max": 0.63
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2016-2324:openrouter:neutral_3",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.033999999999999996,
+          "min": 0.03,
+          "max": 0.04
+        },
+        "High": {
+          "mean": 0.296,
+          "min": 0.27,
+          "max": 0.31
+        },
+        "Critical": {
+          "mean": 0.66,
+          "min": 0.64,
+          "max": 0.68
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "alarmist",
+      "variant_id": "CVE-2016-2324:openrouter:alarmist",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.002,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.016,
+          "min": 0.01,
+          "max": 0.02
+        },
+        "Medium": {
+          "mean": 0.06,
+          "min": 0.05,
+          "max": 0.07
+        },
+        "High": {
+          "mean": 0.316,
+          "min": 0.3,
+          "max": 0.33
+        },
+        "Critical": {
+          "mean": 0.606,
+          "min": 0.59,
+          "max": 0.62
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "downplaying",
+      "variant_id": "CVE-2016-2324:openrouter:downplaying",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.014000000000000002,
+          "min": 0.01,
+          "max": 0.02
+        },
+        "Medium": {
+          "mean": 0.098,
+          "min": 0.09,
+          "max": 0.11
+        },
+        "High": {
+          "mean": 0.476,
+          "min": 0.46,
+          "max": 0.5
+        },
+        "Critical": {
+          "mean": 0.41200000000000003,
+          "min": 0.39,
+          "max": 0.44
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "verbose",
+      "variant_id": "CVE-2016-2324:openrouter:verbose",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.026000000000000002,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "High": {
+          "mean": 0.294,
+          "min": 0.28,
+          "max": 0.31
+        },
+        "Critical": {
+          "mean": 0.67,
+          "min": 0.65,
+          "max": 0.69
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2018-14360:openrouter:neutral_1",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.03,
+          "min": 0.03,
+          "max": 0.03
+        },
+        "Medium": {
+          "mean": 0.19,
+          "min": 0.19,
+          "max": 0.19
+        },
+        "High": {
+          "mean": 0.554,
+          "min": 0.54,
+          "max": 0.57
+        },
+        "Critical": {
+          "mean": 0.22599999999999998,
+          "min": 0.21,
+          "max": 0.24
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2018-14360:openrouter:neutral_2",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.038,
+          "min": 0.03,
+          "max": 0.04
+        },
+        "Medium": {
+          "mean": 0.202,
+          "min": 0.19,
+          "max": 0.21
+        },
+        "High": {
+          "mean": 0.54,
+          "min": 0.53,
+          "max": 0.55
+        },
+        "Critical": {
+          "mean": 0.22000000000000003,
+          "min": 0.2,
+          "max": 0.23
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2018-14360:openrouter:neutral_3",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.022,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "Medium": {
+          "mean": 0.166,
+          "min": 0.16,
+          "max": 0.17
+        },
+        "High": {
+          "mean": 0.558,
+          "min": 0.55,
+          "max": 0.57
+        },
+        "Critical": {
+          "mean": 0.254,
+          "min": 0.24,
+          "max": 0.27
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "alarmist",
+      "variant_id": "CVE-2018-14360:openrouter:alarmist",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        },
+        "Medium": {
+          "mean": 0.146,
+          "min": 0.14,
+          "max": 0.15
+        },
+        "High": {
+          "mean": 0.55,
+          "min": 0.53,
+          "max": 0.57
+        },
+        "Critical": {
+          "mean": 0.284,
+          "min": 0.27,
+          "max": 0.3
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "downplaying",
+      "variant_id": "CVE-2018-14360:openrouter:downplaying",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 4,
+        "High": 1
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": false,
+      "modal_agreement": 0.8,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.192,
+          "min": 0.17,
+          "max": 0.21
+        },
+        "Medium": {
+          "mean": 0.40199999999999997,
+          "min": 0.39,
+          "max": 0.41
+        },
+        "High": {
+          "mean": 0.37,
+          "min": 0.35,
+          "max": 0.39
+        },
+        "Critical": {
+          "mean": 0.036,
+          "min": 0.03,
+          "max": 0.05
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "verbose",
+      "variant_id": "CVE-2018-14360:openrouter:verbose",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.022,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "Medium": {
+          "mean": 0.172,
+          "min": 0.16,
+          "max": 0.18
+        },
+        "High": {
+          "mean": 0.552,
+          "min": 0.54,
+          "max": 0.56
+        },
+        "Critical": {
+          "mean": 0.254,
+          "min": 0.25,
+          "max": 0.26
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2019-13224:openrouter:neutral_1",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.164,
+          "min": 0.15,
+          "max": 0.18
+        },
+        "High": {
+          "mean": 0.594,
+          "min": 0.58,
+          "max": 0.62
+        },
+        "Critical": {
+          "mean": 0.23200000000000004,
+          "min": 0.22,
+          "max": 0.26
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2019-13224:openrouter:neutral_2",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.126,
+          "min": 0.11,
+          "max": 0.14
+        },
+        "High": {
+          "mean": 0.606,
+          "min": 0.59,
+          "max": 0.64
+        },
+        "Critical": {
+          "mean": 0.258,
+          "min": 0.23,
+          "max": 0.29
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2019-13224:openrouter:neutral_3",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.11200000000000002,
+          "min": 0.1,
+          "max": 0.13
+        },
+        "High": {
+          "mean": 0.582,
+          "min": 0.57,
+          "max": 0.59
+        },
+        "Critical": {
+          "mean": 0.296,
+          "min": 0.29,
+          "max": 0.3
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "alarmist",
+      "variant_id": "CVE-2019-13224:openrouter:alarmist",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.158,
+          "min": 0.15,
+          "max": 0.17
+        },
+        "High": {
+          "mean": 0.584,
+          "min": 0.57,
+          "max": 0.61
+        },
+        "Critical": {
+          "mean": 0.248,
+          "min": 0.23,
+          "max": 0.27
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "downplaying",
+      "variant_id": "CVE-2019-13224:openrouter:downplaying",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.042,
+          "min": 0.03,
+          "max": 0.05
+        },
+        "Medium": {
+          "mean": 0.406,
+          "min": 0.4,
+          "max": 0.42
+        },
+        "High": {
+          "mean": 0.492,
+          "min": 0.48,
+          "max": 0.5
+        },
+        "Critical": {
+          "mean": 0.06,
+          "min": 0.05,
+          "max": 0.07
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "verbose",
+      "variant_id": "CVE-2019-13224:openrouter:verbose",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.152,
+          "min": 0.14,
+          "max": 0.16
+        },
+        "High": {
+          "mean": 0.572,
+          "min": 0.55,
+          "max": 0.59
+        },
+        "Critical": {
+          "mean": 0.266,
+          "min": 0.25,
+          "max": 0.28
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2020-12607:openrouter:neutral_1",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 3,
+        "Low": 2
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": false,
+      "modal_agreement": 0.6,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.43599999999999994,
+          "min": 0.41,
+          "max": 0.48
+        },
+        "Medium": {
+          "mean": 0.44799999999999995,
+          "min": 0.41,
+          "max": 0.47
+        },
+        "High": {
+          "mean": 0.10600000000000001,
+          "min": 0.1,
+          "max": 0.11
+        },
+        "Critical": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2020-12607:openrouter:neutral_2",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.38,
+          "min": 0.34,
+          "max": 0.42
+        },
+        "Medium": {
+          "mean": 0.462,
+          "min": 0.43,
+          "max": 0.5
+        },
+        "High": {
+          "mean": 0.148,
+          "min": 0.14,
+          "max": 0.16
+        },
+        "Critical": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2020-12607:openrouter:neutral_3",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 3,
+        "Medium": 2
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": false,
+      "modal_agreement": 0.6,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.414,
+          "min": 0.38,
+          "max": 0.46
+        },
+        "Medium": {
+          "mean": 0.40599999999999997,
+          "min": 0.39,
+          "max": 0.42
+        },
+        "High": {
+          "mean": 0.154,
+          "min": 0.13,
+          "max": 0.17
+        },
+        "Critical": {
+          "mean": 0.016,
+          "min": 0.01,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "alarmist",
+      "variant_id": "CVE-2020-12607:openrouter:alarmist",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.22999999999999998,
+          "min": 0.22,
+          "max": 0.24
+        },
+        "Medium": {
+          "mean": 0.426,
+          "min": 0.42,
+          "max": 0.43
+        },
+        "High": {
+          "mean": 0.296,
+          "min": 0.29,
+          "max": 0.3
+        },
+        "Critical": {
+          "mean": 0.038,
+          "min": 0.03,
+          "max": 0.04
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "downplaying",
+      "variant_id": "CVE-2020-12607:openrouter:downplaying",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.004,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.718,
+          "min": 0.7,
+          "max": 0.74
+        },
+        "Medium": {
+          "mean": 0.258,
+          "min": 0.24,
+          "max": 0.27
+        },
+        "High": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        },
+        "Critical": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "verbose",
+      "variant_id": "CVE-2020-12607:openrouter:verbose",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 1,
+        "Medium": 4
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": false,
+      "modal_agreement": 0.8,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.008,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.404,
+          "min": 0.39,
+          "max": 0.42
+        },
+        "Medium": {
+          "mean": 0.43600000000000005,
+          "min": 0.41,
+          "max": 0.45
+        },
+        "High": {
+          "mean": 0.142,
+          "min": 0.13,
+          "max": 0.15
+        },
+        "Critical": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2020-36766:openrouter:neutral_1",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.6839999999999999,
+          "min": 0.67,
+          "max": 0.7
+        },
+        "Medium": {
+          "mean": 0.274,
+          "min": 0.26,
+          "max": 0.29
+        },
+        "High": {
+          "mean": 0.042,
+          "min": 0.04,
+          "max": 0.05
+        },
+        "Critical": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2020-36766:openrouter:neutral_2",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.672,
+          "min": 0.64,
+          "max": 0.7
+        },
+        "Medium": {
+          "mean": 0.286,
+          "min": 0.27,
+          "max": 0.31
+        },
+        "High": {
+          "mean": 0.04,
+          "min": 0.03,
+          "max": 0.05
+        },
+        "Critical": {
+          "mean": 0.002,
+          "min": 0.0,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2020-36766:openrouter:neutral_3",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.662,
+          "min": 0.65,
+          "max": 0.68
+        },
+        "Medium": {
+          "mean": 0.278,
+          "min": 0.27,
+          "max": 0.29
+        },
+        "High": {
+          "mean": 0.05,
+          "min": 0.04,
+          "max": 0.06
+        },
+        "Critical": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "alarmist",
+      "variant_id": "CVE-2020-36766:openrouter:alarmist",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 2,
+        "Medium": 3
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": false,
+      "modal_agreement": 0.6,
+      "nvd_matching_repeats": 2,
+      "nvd_accuracy": 0.4,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.362,
+          "min": 0.31,
+          "max": 0.44
+        },
+        "Medium": {
+          "mean": 0.368,
+          "min": 0.34,
+          "max": 0.38
+        },
+        "High": {
+          "mean": 0.23199999999999998,
+          "min": 0.19,
+          "max": 0.27
+        },
+        "Critical": {
+          "mean": 0.038,
+          "min": 0.03,
+          "max": 0.04
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "downplaying",
+      "variant_id": "CVE-2020-36766:openrouter:downplaying",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.8880000000000001,
+          "min": 0.88,
+          "max": 0.9
+        },
+        "Medium": {
+          "mean": 0.11000000000000001,
+          "min": 0.1,
+          "max": 0.12
+        },
+        "High": {
+          "mean": 0.002,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Critical": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "verbose",
+      "variant_id": "CVE-2020-36766:openrouter:verbose",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.71,
+          "min": 0.66,
+          "max": 0.75
+        },
+        "Medium": {
+          "mean": 0.25,
+          "min": 0.22,
+          "max": 0.29
+        },
+        "High": {
+          "mean": 0.033999999999999996,
+          "min": 0.03,
+          "max": 0.04
+        },
+        "Critical": {
+          "mean": 0.006,
+          "min": 0.0,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2021-23639:openrouter:neutral_1",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.038,
+          "min": 0.03,
+          "max": 0.05
+        },
+        "High": {
+          "mean": 0.258,
+          "min": 0.23,
+          "max": 0.28
+        },
+        "Critical": {
+          "mean": 0.694,
+          "min": 0.66,
+          "max": 0.73
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2021-23639:openrouter:neutral_2",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.006,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.024,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "High": {
+          "mean": 0.22200000000000003,
+          "min": 0.21,
+          "max": 0.23
+        },
+        "Critical": {
+          "mean": 0.748,
+          "min": 0.73,
+          "max": 0.76
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2021-23639:openrouter:neutral_3",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.034,
+          "min": 0.02,
+          "max": 0.04
+        },
+        "High": {
+          "mean": 0.244,
+          "min": 0.22,
+          "max": 0.26
+        },
+        "Critical": {
+          "mean": 0.712,
+          "min": 0.69,
+          "max": 0.75
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "alarmist",
+      "variant_id": "CVE-2021-23639:openrouter:alarmist",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.042,
+          "min": 0.04,
+          "max": 0.05
+        },
+        "High": {
+          "mean": 0.258,
+          "min": 0.24,
+          "max": 0.27
+        },
+        "Critical": {
+          "mean": 0.68,
+          "min": 0.67,
+          "max": 0.7
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "downplaying",
+      "variant_id": "CVE-2021-23639:openrouter:downplaying",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 4,
+        "Critical": 1
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": false,
+      "modal_agreement": 0.8,
+      "nvd_matching_repeats": 1,
+      "nvd_accuracy": 0.2,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.038,
+          "min": 0.03,
+          "max": 0.05
+        },
+        "Medium": {
+          "mean": 0.164,
+          "min": 0.15,
+          "max": 0.18
+        },
+        "High": {
+          "mean": 0.41600000000000004,
+          "min": 0.4,
+          "max": 0.44
+        },
+        "Critical": {
+          "mean": 0.382,
+          "min": 0.36,
+          "max": 0.41
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "verbose",
+      "variant_id": "CVE-2021-23639:openrouter:verbose",
+      "nvd_band": "Critical",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Medium": {
+          "mean": 0.032,
+          "min": 0.02,
+          "max": 0.04
+        },
+        "High": {
+          "mean": 0.24,
+          "min": 0.23,
+          "max": 0.25
+        },
+        "Critical": {
+          "mean": 0.718,
+          "min": 0.7,
+          "max": 0.74
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2022-0819:openrouter:neutral_1",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.018,
+          "min": 0.01,
+          "max": 0.02
+        },
+        "Medium": {
+          "mean": 0.082,
+          "min": 0.07,
+          "max": 0.09
+        },
+        "High": {
+          "mean": 0.348,
+          "min": 0.33,
+          "max": 0.36
+        },
+        "Critical": {
+          "mean": 0.542,
+          "min": 0.52,
+          "max": 0.56
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2022-0819:openrouter:neutral_2",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        },
+        "Medium": {
+          "mean": 0.128,
+          "min": 0.12,
+          "max": 0.14
+        },
+        "High": {
+          "mean": 0.376,
+          "min": 0.36,
+          "max": 0.4
+        },
+        "Critical": {
+          "mean": 0.466,
+          "min": 0.44,
+          "max": 0.48
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2022-0819:openrouter:neutral_3",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.018,
+          "min": 0.01,
+          "max": 0.02
+        },
+        "Medium": {
+          "mean": 0.082,
+          "min": 0.06,
+          "max": 0.1
+        },
+        "High": {
+          "mean": 0.352,
+          "min": 0.34,
+          "max": 0.37
+        },
+        "Critical": {
+          "mean": 0.538,
+          "min": 0.51,
+          "max": 0.58
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "alarmist",
+      "variant_id": "CVE-2022-0819:openrouter:alarmist",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.134,
+          "min": 0.11,
+          "max": 0.16
+        },
+        "Low": {
+          "mean": 0.05600000000000001,
+          "min": 0.05,
+          "max": 0.06
+        },
+        "Medium": {
+          "mean": 0.07200000000000001,
+          "min": 0.07,
+          "max": 0.08
+        },
+        "High": {
+          "mean": 0.29,
+          "min": 0.27,
+          "max": 0.3
+        },
+        "Critical": {
+          "mean": 0.44800000000000006,
+          "min": 0.43,
+          "max": 0.49
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "downplaying",
+      "variant_id": "CVE-2022-0819:openrouter:downplaying",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.22599999999999998,
+          "min": 0.21,
+          "max": 0.25
+        },
+        "Medium": {
+          "mean": 0.41,
+          "min": 0.39,
+          "max": 0.43
+        },
+        "High": {
+          "mean": 0.298,
+          "min": 0.28,
+          "max": 0.32
+        },
+        "Critical": {
+          "mean": 0.05600000000000001,
+          "min": 0.04,
+          "max": 0.07
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "verbose",
+      "variant_id": "CVE-2022-0819:openrouter:verbose",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Critical": 5
+      },
+      "modal_bands": [
+        "Critical"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.018,
+          "min": 0.01,
+          "max": 0.02
+        },
+        "Low": {
+          "mean": 0.03,
+          "min": 0.03,
+          "max": 0.03
+        },
+        "Medium": {
+          "mean": 0.136,
+          "min": 0.13,
+          "max": 0.15
+        },
+        "High": {
+          "mean": 0.386,
+          "min": 0.37,
+          "max": 0.4
+        },
+        "Critical": {
+          "mean": 0.43,
+          "min": 0.41,
+          "max": 0.46
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2022-23649:openrouter:neutral_1",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.052000000000000005,
+          "min": 0.04,
+          "max": 0.06
+        },
+        "Medium": {
+          "mean": 0.33,
+          "min": 0.32,
+          "max": 0.34
+        },
+        "High": {
+          "mean": 0.49800000000000005,
+          "min": 0.49,
+          "max": 0.51
+        },
+        "Critical": {
+          "mean": 0.12,
+          "min": 0.11,
+          "max": 0.13
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2022-23649:openrouter:neutral_2",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.046,
+          "min": 0.04,
+          "max": 0.05
+        },
+        "Medium": {
+          "mean": 0.292,
+          "min": 0.27,
+          "max": 0.3
+        },
+        "High": {
+          "mean": 0.502,
+          "min": 0.49,
+          "max": 0.52
+        },
+        "Critical": {
+          "mean": 0.16,
+          "min": 0.15,
+          "max": 0.17
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2022-23649:openrouter:neutral_3",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.036,
+          "min": 0.03,
+          "max": 0.04
+        },
+        "Medium": {
+          "mean": 0.272,
+          "min": 0.25,
+          "max": 0.3
+        },
+        "High": {
+          "mean": 0.524,
+          "min": 0.5,
+          "max": 0.55
+        },
+        "Critical": {
+          "mean": 0.168,
+          "min": 0.16,
+          "max": 0.19
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "alarmist",
+      "variant_id": "CVE-2022-23649:openrouter:alarmist",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.044,
+          "min": 0.04,
+          "max": 0.05
+        },
+        "Medium": {
+          "mean": 0.284,
+          "min": 0.26,
+          "max": 0.3
+        },
+        "High": {
+          "mean": 0.514,
+          "min": 0.49,
+          "max": 0.53
+        },
+        "Critical": {
+          "mean": 0.158,
+          "min": 0.15,
+          "max": 0.17
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "downplaying",
+      "variant_id": "CVE-2022-23649:openrouter:downplaying",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.31,
+          "min": 0.29,
+          "max": 0.32
+        },
+        "Medium": {
+          "mean": 0.48,
+          "min": 0.47,
+          "max": 0.49
+        },
+        "High": {
+          "mean": 0.19,
+          "min": 0.18,
+          "max": 0.2
+        },
+        "Critical": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "verbose",
+      "variant_id": "CVE-2022-23649:openrouter:verbose",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.046,
+          "min": 0.04,
+          "max": 0.05
+        },
+        "Medium": {
+          "mean": 0.292,
+          "min": 0.27,
+          "max": 0.31
+        },
+        "High": {
+          "mean": 0.508,
+          "min": 0.48,
+          "max": 0.52
+        },
+        "Critical": {
+          "mean": 0.154,
+          "min": 0.14,
+          "max": 0.17
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2022-25319:openrouter:neutral_1",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.002,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.128,
+          "min": 0.12,
+          "max": 0.14
+        },
+        "Medium": {
+          "mean": 0.454,
+          "min": 0.44,
+          "max": 0.47
+        },
+        "High": {
+          "mean": 0.354,
+          "min": 0.34,
+          "max": 0.37
+        },
+        "Critical": {
+          "mean": 0.062,
+          "min": 0.06,
+          "max": 0.07
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2022-25319:openrouter:neutral_2",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": false,
+        "failures": [
+          "hedge dropped: original uses could / may / might"
+        ],
+        "warnings": [
+          "fewer hedge words (0 vs 1 in original)"
+        ]
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.16,
+          "min": 0.14,
+          "max": 0.18
+        },
+        "Medium": {
+          "mean": 0.454,
+          "min": 0.45,
+          "max": 0.46
+        },
+        "High": {
+          "mean": 0.332,
+          "min": 0.32,
+          "max": 0.35
+        },
+        "Critical": {
+          "mean": 0.044,
+          "min": 0.04,
+          "max": 0.05
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2022-25319:openrouter:neutral_3",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.198,
+          "min": 0.18,
+          "max": 0.22
+        },
+        "Medium": {
+          "mean": 0.44000000000000006,
+          "min": 0.42,
+          "max": 0.46
+        },
+        "High": {
+          "mean": 0.31,
+          "min": 0.3,
+          "max": 0.33
+        },
+        "Critical": {
+          "mean": 0.042,
+          "min": 0.04,
+          "max": 0.05
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "alarmist",
+      "variant_id": "CVE-2022-25319:openrouter:alarmist",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.008,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.092,
+          "min": 0.07,
+          "max": 0.11
+        },
+        "Medium": {
+          "mean": 0.324,
+          "min": 0.31,
+          "max": 0.35
+        },
+        "High": {
+          "mean": 0.45599999999999996,
+          "min": 0.42,
+          "max": 0.5
+        },
+        "Critical": {
+          "mean": 0.12,
+          "min": 0.12,
+          "max": 0.12
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "downplaying",
+      "variant_id": "CVE-2022-25319:openrouter:downplaying",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.018,
+          "min": 0.01,
+          "max": 0.02
+        },
+        "Low": {
+          "mean": 0.696,
+          "min": 0.67,
+          "max": 0.75
+        },
+        "Medium": {
+          "mean": 0.23199999999999998,
+          "min": 0.21,
+          "max": 0.25
+        },
+        "High": {
+          "mean": 0.046,
+          "min": 0.03,
+          "max": 0.05
+        },
+        "Critical": {
+          "mean": 0.008,
+          "min": 0.0,
+          "max": 0.01
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "verbose",
+      "variant_id": "CVE-2022-25319:openrouter:verbose",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 4,
+        "Medium": 1
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": false,
+      "modal_agreement": 0.8,
+      "nvd_matching_repeats": 1,
+      "nvd_accuracy": 0.2,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.006,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.126,
+          "min": 0.11,
+          "max": 0.14
+        },
+        "Medium": {
+          "mean": 0.378,
+          "min": 0.37,
+          "max": 0.39
+        },
+        "High": {
+          "mean": 0.406,
+          "min": 0.39,
+          "max": 0.43
+        },
+        "Critical": {
+          "mean": 0.08399999999999999,
+          "min": 0.08,
+          "max": 0.09
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2022-2571:openrouter:neutral_1",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.012,
+          "min": 0.01,
+          "max": 0.02
+        },
+        "Low": {
+          "mean": 0.036,
+          "min": 0.03,
+          "max": 0.05
+        },
+        "Medium": {
+          "mean": 0.16599999999999998,
+          "min": 0.15,
+          "max": 0.18
+        },
+        "High": {
+          "mean": 0.51,
+          "min": 0.5,
+          "max": 0.52
+        },
+        "Critical": {
+          "mean": 0.27599999999999997,
+          "min": 0.25,
+          "max": 0.29
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2022-2571:openrouter:neutral_2",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.002,
+          "min": 0.0,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.028000000000000004,
+          "min": 0.02,
+          "max": 0.04
+        },
+        "Medium": {
+          "mean": 0.162,
+          "min": 0.14,
+          "max": 0.18
+        },
+        "High": {
+          "mean": 0.524,
+          "min": 0.51,
+          "max": 0.54
+        },
+        "Critical": {
+          "mean": 0.284,
+          "min": 0.27,
+          "max": 0.31
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2022-2571:openrouter:neutral_3",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.026000000000000002,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "Medium": {
+          "mean": 0.194,
+          "min": 0.16,
+          "max": 0.21
+        },
+        "High": {
+          "mean": 0.556,
+          "min": 0.54,
+          "max": 0.57
+        },
+        "Critical": {
+          "mean": 0.22400000000000003,
+          "min": 0.2,
+          "max": 0.25
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "alarmist",
+      "variant_id": "CVE-2022-2571:openrouter:alarmist",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.068,
+          "min": 0.05,
+          "max": 0.09
+        },
+        "Low": {
+          "mean": 0.05,
+          "min": 0.04,
+          "max": 0.06
+        },
+        "Medium": {
+          "mean": 0.156,
+          "min": 0.14,
+          "max": 0.18
+        },
+        "High": {
+          "mean": 0.438,
+          "min": 0.42,
+          "max": 0.47
+        },
+        "Critical": {
+          "mean": 0.288,
+          "min": 0.27,
+          "max": 0.31
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "downplaying",
+      "variant_id": "CVE-2022-2571:openrouter:downplaying",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.426,
+          "min": 0.41,
+          "max": 0.45
+        },
+        "Medium": {
+          "mean": 0.356,
+          "min": 0.35,
+          "max": 0.37
+        },
+        "High": {
+          "mean": 0.188,
+          "min": 0.17,
+          "max": 0.2
+        },
+        "Critical": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "verbose",
+      "variant_id": "CVE-2022-2571:openrouter:verbose",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.027999999999999997,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "Medium": {
+          "mean": 0.158,
+          "min": 0.15,
+          "max": 0.17
+        },
+        "High": {
+          "mean": 0.52,
+          "min": 0.5,
+          "max": 0.53
+        },
+        "Critical": {
+          "mean": 0.28400000000000003,
+          "min": 0.27,
+          "max": 0.31
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2022-36021:openrouter:neutral_1",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 4,
+        "High": 1
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": false,
+      "modal_agreement": 0.8,
+      "nvd_matching_repeats": 4,
+      "nvd_accuracy": 0.8,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.074,
+          "min": 0.06,
+          "max": 0.09
+        },
+        "Medium": {
+          "mean": 0.45199999999999996,
+          "min": 0.42,
+          "max": 0.48
+        },
+        "High": {
+          "mean": 0.434,
+          "min": 0.41,
+          "max": 0.48
+        },
+        "Critical": {
+          "mean": 0.04,
+          "min": 0.04,
+          "max": 0.04
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2022-36021:openrouter:neutral_2",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.064,
+          "min": 0.06,
+          "max": 0.07
+        },
+        "Medium": {
+          "mean": 0.42000000000000004,
+          "min": 0.39,
+          "max": 0.44
+        },
+        "High": {
+          "mean": 0.476,
+          "min": 0.45,
+          "max": 0.5
+        },
+        "Critical": {
+          "mean": 0.04,
+          "min": 0.03,
+          "max": 0.05
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2022-36021:openrouter:neutral_3",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 2,
+        "High": 3
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": false,
+      "modal_agreement": 0.6,
+      "nvd_matching_repeats": 2,
+      "nvd_accuracy": 0.4,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.086,
+          "min": 0.08,
+          "max": 0.09
+        },
+        "Medium": {
+          "mean": 0.426,
+          "min": 0.4,
+          "max": 0.45
+        },
+        "High": {
+          "mean": 0.44000000000000006,
+          "min": 0.43,
+          "max": 0.45
+        },
+        "Critical": {
+          "mean": 0.048,
+          "min": 0.04,
+          "max": 0.06
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "alarmist",
+      "variant_id": "CVE-2022-36021:openrouter:alarmist",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.07,
+          "min": 0.06,
+          "max": 0.08
+        },
+        "Medium": {
+          "mean": 0.382,
+          "min": 0.36,
+          "max": 0.41
+        },
+        "High": {
+          "mean": 0.484,
+          "min": 0.45,
+          "max": 0.51
+        },
+        "Critical": {
+          "mean": 0.064,
+          "min": 0.06,
+          "max": 0.07
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "downplaying",
+      "variant_id": "CVE-2022-36021:openrouter:downplaying",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.21400000000000002,
+          "min": 0.2,
+          "max": 0.23
+        },
+        "Medium": {
+          "mean": 0.552,
+          "min": 0.54,
+          "max": 0.57
+        },
+        "High": {
+          "mean": 0.21800000000000003,
+          "min": 0.2,
+          "max": 0.23
+        },
+        "Critical": {
+          "mean": 0.016,
+          "min": 0.01,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "verbose",
+      "variant_id": "CVE-2022-36021:openrouter:verbose",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.1,
+          "min": 0.09,
+          "max": 0.11
+        },
+        "Medium": {
+          "mean": 0.466,
+          "min": 0.45,
+          "max": 0.49
+        },
+        "High": {
+          "mean": 0.404,
+          "min": 0.37,
+          "max": 0.42
+        },
+        "Critical": {
+          "mean": 0.03,
+          "min": 0.03,
+          "max": 0.03
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2022-39368:openrouter:neutral_1",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.046,
+          "min": 0.04,
+          "max": 0.05
+        },
+        "Medium": {
+          "mean": 0.28600000000000003,
+          "min": 0.28,
+          "max": 0.3
+        },
+        "High": {
+          "mean": 0.55,
+          "min": 0.54,
+          "max": 0.56
+        },
+        "Critical": {
+          "mean": 0.118,
+          "min": 0.11,
+          "max": 0.12
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2022-39368:openrouter:neutral_2",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.04,
+          "min": 0.03,
+          "max": 0.05
+        },
+        "Medium": {
+          "mean": 0.27,
+          "min": 0.25,
+          "max": 0.28
+        },
+        "High": {
+          "mean": 0.58,
+          "min": 0.57,
+          "max": 0.61
+        },
+        "Critical": {
+          "mean": 0.11000000000000001,
+          "min": 0.1,
+          "max": 0.12
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2022-39368:openrouter:neutral_3",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.042,
+          "min": 0.04,
+          "max": 0.05
+        },
+        "Medium": {
+          "mean": 0.308,
+          "min": 0.3,
+          "max": 0.32
+        },
+        "High": {
+          "mean": 0.552,
+          "min": 0.54,
+          "max": 0.56
+        },
+        "Critical": {
+          "mean": 0.098,
+          "min": 0.09,
+          "max": 0.11
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "alarmist",
+      "variant_id": "CVE-2022-39368:openrouter:alarmist",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.033999999999999996,
+          "min": 0.03,
+          "max": 0.04
+        },
+        "Medium": {
+          "mean": 0.23199999999999998,
+          "min": 0.22,
+          "max": 0.24
+        },
+        "High": {
+          "mean": 0.598,
+          "min": 0.59,
+          "max": 0.6
+        },
+        "Critical": {
+          "mean": 0.136,
+          "min": 0.13,
+          "max": 0.14
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "downplaying",
+      "variant_id": "CVE-2022-39368:openrouter:downplaying",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.326,
+          "min": 0.28,
+          "max": 0.37
+        },
+        "Medium": {
+          "mean": 0.462,
+          "min": 0.43,
+          "max": 0.48
+        },
+        "High": {
+          "mean": 0.194,
+          "min": 0.16,
+          "max": 0.22
+        },
+        "Critical": {
+          "mean": 0.018,
+          "min": 0.01,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "verbose",
+      "variant_id": "CVE-2022-39368:openrouter:verbose",
+      "nvd_band": "High",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 5
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.054000000000000006,
+          "min": 0.05,
+          "max": 0.06
+        },
+        "Medium": {
+          "mean": 0.306,
+          "min": 0.29,
+          "max": 0.33
+        },
+        "High": {
+          "mean": 0.538,
+          "min": 0.52,
+          "max": 0.55
+        },
+        "Critical": {
+          "mean": 0.10200000000000001,
+          "min": 0.09,
+          "max": 0.11
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2023-39978:openrouter:neutral_1",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.178,
+          "min": 0.16,
+          "max": 0.19
+        },
+        "Medium": {
+          "mean": 0.484,
+          "min": 0.47,
+          "max": 0.5
+        },
+        "High": {
+          "mean": 0.318,
+          "min": 0.3,
+          "max": 0.33
+        },
+        "Critical": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2023-39978:openrouter:neutral_2",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.126,
+          "min": 0.12,
+          "max": 0.14
+        },
+        "Medium": {
+          "mean": 0.504,
+          "min": 0.47,
+          "max": 0.52
+        },
+        "High": {
+          "mean": 0.348,
+          "min": 0.33,
+          "max": 0.38
+        },
+        "Critical": {
+          "mean": 0.022,
+          "min": 0.02,
+          "max": 0.03
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2023-39978:openrouter:neutral_3",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.138,
+          "min": 0.13,
+          "max": 0.14
+        },
+        "Medium": {
+          "mean": 0.45999999999999996,
+          "min": 0.43,
+          "max": 0.48
+        },
+        "High": {
+          "mean": 0.368,
+          "min": 0.35,
+          "max": 0.39
+        },
+        "Critical": {
+          "mean": 0.033999999999999996,
+          "min": 0.03,
+          "max": 0.04
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "alarmist",
+      "variant_id": "CVE-2023-39978:openrouter:alarmist",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "High": 4,
+        "Medium": 1
+      },
+      "modal_bands": [
+        "High"
+      ],
+      "stable": false,
+      "modal_agreement": 0.8,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.082,
+          "min": 0.07,
+          "max": 0.09
+        },
+        "Medium": {
+          "mean": 0.42400000000000004,
+          "min": 0.41,
+          "max": 0.44
+        },
+        "High": {
+          "mean": 0.44800000000000006,
+          "min": 0.42,
+          "max": 0.46
+        },
+        "Critical": {
+          "mean": 0.046,
+          "min": 0.04,
+          "max": 0.05
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "downplaying",
+      "variant_id": "CVE-2023-39978:openrouter:downplaying",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.5980000000000001,
+          "min": 0.52,
+          "max": 0.64
+        },
+        "Medium": {
+          "mean": 0.358,
+          "min": 0.32,
+          "max": 0.41
+        },
+        "High": {
+          "mean": 0.044,
+          "min": 0.03,
+          "max": 0.07
+        },
+        "Critical": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "verbose",
+      "variant_id": "CVE-2023-39978:openrouter:verbose",
+      "nvd_band": "Low",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.22199999999999998,
+          "min": 0.2,
+          "max": 0.24
+        },
+        "Medium": {
+          "mean": 0.472,
+          "min": 0.47,
+          "max": 0.48
+        },
+        "High": {
+          "mean": 0.27999999999999997,
+          "min": 0.26,
+          "max": 0.3
+        },
+        "Critical": {
+          "mean": 0.026000000000000002,
+          "min": 0.02,
+          "max": 0.03
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_1",
+      "variant_id": "CVE-2023-4681:openrouter:neutral_1",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.27599999999999997,
+          "min": 0.25,
+          "max": 0.31
+        },
+        "Medium": {
+          "mean": 0.492,
+          "min": 0.47,
+          "max": 0.52
+        },
+        "High": {
+          "mean": 0.20400000000000001,
+          "min": 0.19,
+          "max": 0.23
+        },
+        "Critical": {
+          "mean": 0.018,
+          "min": 0.01,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_2",
+      "variant_id": "CVE-2023-4681:openrouter:neutral_2",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.21400000000000002,
+          "min": 0.18,
+          "max": 0.25
+        },
+        "Medium": {
+          "mean": 0.534,
+          "min": 0.52,
+          "max": 0.55
+        },
+        "High": {
+          "mean": 0.23199999999999998,
+          "min": 0.21,
+          "max": 0.27
+        },
+        "Critical": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_3",
+      "variant_id": "CVE-2023-4681:openrouter:neutral_3",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "Low": {
+          "mean": 0.22999999999999998,
+          "min": 0.21,
+          "max": 0.25
+        },
+        "Medium": {
+          "mean": 0.526,
+          "min": 0.5,
+          "max": 0.55
+        },
+        "High": {
+          "mean": 0.22400000000000003,
+          "min": 0.2,
+          "max": 0.25
+        },
+        "Critical": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "alarmist",
+      "variant_id": "CVE-2023-4681:openrouter:alarmist",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.028000000000000004,
+          "min": 0.02,
+          "max": 0.04
+        },
+        "Low": {
+          "mean": 0.242,
+          "min": 0.21,
+          "max": 0.26
+        },
+        "Medium": {
+          "mean": 0.46799999999999997,
+          "min": 0.46,
+          "max": 0.48
+        },
+        "High": {
+          "mean": 0.22799999999999998,
+          "min": 0.21,
+          "max": 0.26
+        },
+        "Critical": {
+          "mean": 0.033999999999999996,
+          "min": 0.03,
+          "max": 0.04
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "downplaying",
+      "variant_id": "CVE-2023-4681:openrouter:downplaying",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Low": 5
+      },
+      "modal_bands": [
+        "Low"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 0,
+      "nvd_accuracy": 0.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.018,
+          "min": 0.01,
+          "max": 0.02
+        },
+        "Low": {
+          "mean": 0.764,
+          "min": 0.75,
+          "max": 0.78
+        },
+        "Medium": {
+          "mean": 0.19,
+          "min": 0.18,
+          "max": 0.21
+        },
+        "High": {
+          "mean": 0.027999999999999997,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "Critical": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "verbose",
+      "variant_id": "CVE-2023-4681:openrouter:verbose",
+      "nvd_band": "Medium",
+      "valid_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "failed_attempts": 0,
+      "band_counts": {
+        "Medium": 5
+      },
+      "modal_bands": [
+        "Medium"
+      ],
+      "stable": true,
+      "modal_agreement": 1.0,
+      "nvd_matching_repeats": 5,
+      "nvd_accuracy": 1.0,
+      "rewrite_checks": {
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      "probabilities": {
+        "None": {
+          "mean": 0.01,
+          "min": 0.01,
+          "max": 0.01
+        },
+        "Low": {
+          "mean": 0.32999999999999996,
+          "min": 0.31,
+          "max": 0.35
+        },
+        "Medium": {
+          "mean": 0.46399999999999997,
+          "min": 0.46,
+          "max": 0.47
+        },
+        "High": {
+          "mean": 0.176,
+          "min": 0.16,
+          "max": 0.19
+        },
+        "Critical": {
+          "mean": 0.02,
+          "min": 0.02,
+          "max": 0.02
+        }
+      }
+    }
+  ],
+  "wording_comparisons": [
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.017999999999999988,
+        "Medium": -0.0020000000000000018,
+        "High": -0.014000000000000012,
+        "Critical": -0.0019999999999999983
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.009999999999999981,
+        "Medium": -0.003999999999999948,
+        "High": -0.008000000000000007,
+        "Critical": 0.0020000000000000018
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.03199999999999997,
+        "High": 0.020000000000000018,
+        "Critical": 0.012
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.048000000000000015,
+        "Medium": -0.10199999999999998,
+        "High": 0.11800000000000005,
+        "Critical": 0.032
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.28800000000000003,
+        "Medium": -0.04600000000000004,
+        "High": -0.228,
+        "Critical": -0.013999999999999999
+      }
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.035999999999999976,
+        "Medium": -0.019999999999999962,
+        "High": -0.02200000000000002,
+        "Critical": 0.006000000000000002
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.016000000000000007,
+        "High": -0.045999999999999985,
+        "Critical": 0.062000000000000055
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.010000000000000002,
+        "High": -0.01200000000000001,
+        "Critical": 0.02200000000000002
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.016000000000000007,
+        "High": -0.064,
+        "Critical": 0.08000000000000007
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.002,
+        "Low": 0.006,
+        "Medium": 0.009999999999999995,
+        "High": -0.043999999999999984,
+        "Critical": 0.026000000000000023
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.004000000000000002,
+        "Medium": 0.048,
+        "High": 0.11599999999999999,
+        "Critical": -0.16799999999999993
+      }
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.024,
+        "High": -0.066,
+        "Critical": 0.09000000000000008
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.003999999999999997,
+        "Medium": 0.025999999999999995,
+        "High": -0.0040000000000000036,
+        "Critical": -0.026000000000000023
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.011999999999999997,
+        "Medium": 0.038000000000000006,
+        "High": -0.018000000000000016,
+        "Critical": -0.03199999999999997
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.0040000000000000036,
+        "Medium": 0.0020000000000000018,
+        "High": 0.0,
+        "Critical": 0.0020000000000000018
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.006000000000000002,
+        "Medium": -0.018000000000000016,
+        "High": -0.008000000000000007,
+        "Critical": 0.03199999999999997
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.166,
+        "Medium": 0.23799999999999996,
+        "High": -0.18800000000000006,
+        "Critical": -0.216
+      }
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.0040000000000000036,
+        "Medium": 0.00799999999999998,
+        "High": -0.006000000000000005,
+        "Critical": 0.0020000000000000018
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": 0.0040000000000000036,
+        "High": -0.0020000000000000018,
+        "Critical": -0.0019999999999999463
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.034,
+        "High": 0.010000000000000009,
+        "Critical": 0.02400000000000002
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.04799999999999999,
+        "High": -0.014000000000000012,
+        "Critical": 0.062
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.0020000000000000018,
+        "High": -0.01200000000000001,
+        "Critical": 0.014000000000000012
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.032,
+        "Medium": 0.24600000000000002,
+        "High": -0.10399999999999998,
+        "Critical": -0.174
+      }
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.008000000000000007,
+        "High": -0.02400000000000002,
+        "Critical": 0.03200000000000003
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.004,
+        "Low": 0.03599999999999992,
+        "Medium": -0.014000000000000068,
+        "High": -0.017999999999999988,
+        "Critical": 0.0
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.004,
+        "Low": -0.020000000000000018,
+        "Medium": 0.0,
+        "High": 0.023999999999999994,
+        "Critical": 0.0
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.006,
+        "Low": 0.013999999999999957,
+        "Medium": -0.05600000000000005,
+        "High": 0.03,
+        "Critical": 0.006
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.006,
+        "Low": -0.17000000000000004,
+        "Medium": -0.03600000000000003,
+        "High": 0.172,
+        "Critical": 0.027999999999999997
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.31799999999999995,
+        "Medium": -0.20400000000000001,
+        "High": -0.104,
+        "Critical": -0.01
+      }
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.004,
+        "Low": 0.0040000000000000036,
+        "Medium": -0.025999999999999968,
+        "High": 0.017999999999999988,
+        "Critical": 0.0
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Low"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.01000000000000012,
+        "Medium": 0.014000000000000012,
+        "High": 0.0040000000000000036,
+        "Critical": -0.008
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Low"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.02200000000000002,
+        "Medium": 0.025999999999999968,
+        "High": 0.0020000000000000018,
+        "Critical": -0.006
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Low"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.03200000000000003,
+        "Medium": 0.018000000000000016,
+        "High": 0.012000000000000004,
+        "Critical": 0.002
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Low"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.3320000000000001,
+        "Medium": 0.10799999999999998,
+        "High": 0.19399999999999998,
+        "Critical": 0.03
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Low"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.19400000000000006,
+        "Medium": -0.15,
+        "High": -0.036,
+        "Critical": -0.008
+      }
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Low"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.015999999999999903,
+        "Medium": -0.010000000000000009,
+        "High": -0.0040000000000000036,
+        "Critical": -0.002
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.012000000000000004,
+        "High": 0.0040000000000000036,
+        "Critical": 0.007999999999999896
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.004,
+        "Medium": -0.026000000000000002,
+        "High": -0.03199999999999997,
+        "Critical": 0.061999999999999944
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.016,
+        "High": -0.010000000000000009,
+        "Critical": 0.025999999999999912
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.01,
+        "Low": 0.0,
+        "Medium": -0.008,
+        "High": 0.0040000000000000036,
+        "Critical": -0.006000000000000005
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.027999999999999997,
+        "Medium": 0.114,
+        "High": 0.16200000000000003,
+        "Critical": -0.30400000000000005
+      }
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0,
+        "Medium": -0.018000000000000002,
+        "High": -0.014000000000000012,
+        "Critical": 0.03199999999999992
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.002,
+        "Low": -0.004,
+        "Medium": -0.024000000000000007,
+        "High": -0.040000000000000036,
+        "Critical": 0.07000000000000006
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.002,
+        "Low": -0.0019999999999999983,
+        "Medium": 0.021999999999999992,
+        "High": -0.01200000000000001,
+        "Critical": -0.00599999999999995
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.002,
+        "Low": -0.004,
+        "Medium": -0.024000000000000007,
+        "High": -0.03600000000000003,
+        "Critical": 0.06600000000000006
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.12200000000000001,
+        "Low": 0.03400000000000001,
+        "Medium": -0.034,
+        "High": -0.09800000000000003,
+        "Critical": -0.02399999999999991
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": -0.002,
+        "Low": 0.204,
+        "Medium": 0.30399999999999994,
+        "High": -0.09000000000000002,
+        "Critical": -0.416
+      }
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Critical"
+      ],
+      "rewrite_modal_bands": [
+        "Critical"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.005999999999999998,
+        "Low": 0.008,
+        "Medium": 0.03,
+        "High": -0.0020000000000000018,
+        "Critical": -0.04199999999999998
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.012000000000000004,
+        "Medium": 0.028000000000000025,
+        "High": -0.013999999999999957,
+        "Critical": -0.025999999999999995
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.005999999999999998,
+        "Medium": -0.010000000000000009,
+        "High": -0.010000000000000009,
+        "Critical": 0.014000000000000012
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.0040000000000000036,
+        "Medium": -0.02999999999999997,
+        "High": 0.01200000000000001,
+        "Critical": 0.02200000000000002
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.003999999999999997,
+        "Medium": -0.018000000000000016,
+        "High": 0.0020000000000000018,
+        "Critical": 0.01200000000000001
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.27,
+        "Medium": 0.178,
+        "High": -0.322,
+        "Critical": -0.126
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.005999999999999998,
+        "Medium": -0.010000000000000009,
+        "High": -0.0040000000000000036,
+        "Critical": 0.008000000000000007
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.002,
+        "Low": -0.025999999999999995,
+        "Medium": 0.03799999999999998,
+        "High": -0.008000000000000007,
+        "Critical": -0.0020000000000000018
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.006,
+        "Low": 0.006000000000000005,
+        "Medium": 0.03799999999999998,
+        "High": -0.02999999999999997,
+        "Critical": -0.020000000000000004
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.006,
+        "Low": 0.04400000000000001,
+        "Medium": 0.02400000000000002,
+        "High": -0.05199999999999999,
+        "Critical": -0.022
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.004,
+        "Low": -0.062,
+        "Medium": -0.09200000000000003,
+        "High": 0.09399999999999997,
+        "Critical": 0.055999999999999994
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.013999999999999999,
+        "Low": 0.5419999999999999,
+        "Medium": -0.18400000000000005,
+        "High": -0.316,
+        "Critical": -0.056
+      }
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.002,
+        "Low": -0.027999999999999997,
+        "Medium": -0.038000000000000034,
+        "High": 0.04400000000000004,
+        "Critical": 0.01999999999999999
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.002,
+        "Low": 0.0,
+        "Medium": -0.014000000000000012,
+        "High": 0.010000000000000009,
+        "Critical": 0.0019999999999999463
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.008,
+        "Low": -0.007999999999999993,
+        "Medium": -0.017999999999999988,
+        "High": 0.02400000000000002,
+        "Critical": 0.009999999999999953
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.01,
+        "Low": -0.009999999999999995,
+        "Medium": 0.014000000000000012,
+        "High": 0.05600000000000005,
+        "Critical": -0.04999999999999999
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.058,
+        "Low": 0.014000000000000005,
+        "Medium": -0.023999999999999994,
+        "High": -0.062,
+        "Critical": 0.013999999999999957
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.39,
+        "Medium": 0.176,
+        "High": -0.312,
+        "Critical": -0.254
+      }
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.008,
+        "Medium": -0.021999999999999992,
+        "High": 0.020000000000000018,
+        "Critical": 0.010000000000000009
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.013999999999999999,
+        "Medium": -1.1102230246251565e-16,
+        "High": 0.020000000000000018,
+        "Critical": -0.005999999999999998
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.023999999999999994,
+        "Medium": -0.03200000000000003,
+        "High": 0.062,
+        "Critical": -0.005999999999999998
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.0020000000000000018,
+        "Medium": -0.02600000000000008,
+        "High": 0.02600000000000008,
+        "Critical": 0.0020000000000000018
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.017999999999999988,
+        "Medium": -0.07000000000000006,
+        "High": 0.07,
+        "Critical": 0.018000000000000002
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.12600000000000003,
+        "Medium": 0.09999999999999998,
+        "High": -0.19599999999999995,
+        "Critical": -0.03
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.01200000000000001,
+        "Medium": 0.013999999999999957,
+        "High": -0.009999999999999953,
+        "Critical": -0.016
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.010000000000000002,
+        "Medium": -0.00599999999999995,
+        "High": -0.008000000000000007,
+        "Critical": 0.003999999999999976
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.0040000000000000036,
+        "Medium": -0.021999999999999964,
+        "High": 0.02199999999999991,
+        "Critical": -0.0040000000000000036
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.006000000000000005,
+        "Medium": 0.016000000000000014,
+        "High": -0.006000000000000005,
+        "Critical": -0.016000000000000014
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.0020000000000000018,
+        "Medium": -0.06,
+        "High": 0.039999999999999925,
+        "Critical": 0.021999999999999992
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.29000000000000004,
+        "Medium": 0.17000000000000004,
+        "High": -0.36400000000000005,
+        "Critical": -0.09600000000000002
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "High"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.01800000000000001,
+        "Medium": 0.014000000000000012,
+        "High": -0.020000000000000018,
+        "Critical": -0.01200000000000001
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.01999999999999999,
+        "Medium": -0.040000000000000036,
+        "High": 0.016000000000000014,
+        "Critical": 0.004
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.032,
+        "Medium": -0.020000000000000018,
+        "High": 0.045999999999999985,
+        "Critical": 0.005999999999999998
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.01999999999999999,
+        "Medium": -0.06400000000000006,
+        "High": 0.066,
+        "Critical": 0.017999999999999995
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "High"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": -0.076,
+        "Medium": -0.09999999999999998,
+        "High": 0.14600000000000007,
+        "Critical": 0.03
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.44000000000000006,
+        "Medium": -0.16600000000000004,
+        "High": -0.258,
+        "Critical": -0.016
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.06399999999999997,
+        "Medium": -0.052000000000000046,
+        "High": -0.02200000000000002,
+        "Critical": 0.010000000000000002
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_1",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.045999999999999985,
+        "Medium": 0.01200000000000001,
+        "High": -0.045999999999999985,
+        "Critical": -0.012
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_2",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.01,
+        "Low": -0.01599999999999996,
+        "Medium": 0.05400000000000005,
+        "High": -0.018000000000000016,
+        "Critical": -0.009999999999999998
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_3",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": -0.01,
+        "Low": 0.0,
+        "Medium": 0.04600000000000004,
+        "High": -0.025999999999999968,
+        "Critical": -0.009999999999999998
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "alarmist",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.018000000000000002,
+        "Low": 0.01200000000000001,
+        "Medium": -0.01200000000000001,
+        "High": -0.02200000000000002,
+        "Critical": 0.003999999999999997
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "downplaying",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Low"
+      ],
+      "modal_flip": true,
+      "probability_shifts": {
+        "None": 0.007999999999999998,
+        "Low": 0.534,
+        "Medium": -0.29,
+        "High": -0.222,
+        "Critical": -0.03
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "verbose",
+      "original_modal_bands": [
+        "Medium"
+      ],
+      "rewrite_modal_bands": [
+        "Medium"
+      ],
+      "modal_flip": false,
+      "probability_shifts": {
+        "None": 0.0,
+        "Low": 0.09999999999999998,
+        "Medium": -0.016000000000000014,
+        "High": -0.07400000000000001,
+        "Critical": -0.009999999999999998
+      }
+    }
+  ],
+  "by_variant": {
+    "original": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 44,
+      "nvd_accuracy": 0.5866666666666667,
+      "stable_groups": 14,
+      "wording_flips": 0,
+      "comparable_pairs": 0,
+      "modal_flip_rate": null
+    },
+    "neutral_1": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 44,
+      "nvd_accuracy": 0.5866666666666667,
+      "stable_groups": 13,
+      "wording_flips": 0,
+      "comparable_pairs": 15,
+      "modal_flip_rate": 0.0
+    },
+    "neutral_2": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 40,
+      "nvd_accuracy": 0.5333333333333333,
+      "stable_groups": 15,
+      "wording_flips": 1,
+      "comparable_pairs": 15,
+      "modal_flip_rate": 0.06666666666666667
+    },
+    "neutral_3": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 42,
+      "nvd_accuracy": 0.56,
+      "stable_groups": 13,
+      "wording_flips": 2,
+      "comparable_pairs": 15,
+      "modal_flip_rate": 0.13333333333333333
+    },
+    "alarmist": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 27,
+      "nvd_accuracy": 0.36,
+      "stable_groups": 13,
+      "wording_flips": 5,
+      "comparable_pairs": 15,
+      "modal_flip_rate": 0.3333333333333333
+    },
+    "downplaying": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 20,
+      "nvd_accuracy": 0.26666666666666666,
+      "stable_groups": 12,
+      "wording_flips": 11,
+      "comparable_pairs": 15,
+      "modal_flip_rate": 0.7333333333333333
+    },
+    "verbose": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 41,
+      "nvd_accuracy": 0.5466666666666666,
+      "stable_groups": 13,
+      "wording_flips": 1,
+      "comparable_pairs": 15,
+      "modal_flip_rate": 0.06666666666666667
+    }
+  },
+  "by_category": {
+    "original": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 44,
+      "nvd_accuracy": 0.5866666666666667,
+      "stable_groups": 14,
+      "wording_flips": 0,
+      "comparable_pairs": 0,
+      "modal_flip_rate": null
+    },
+    "neutral": {
+      "description_groups": 45,
+      "groups_with_results": 45,
+      "valid_repeats": 225,
+      "nvd_matching_repeats": 126,
+      "nvd_accuracy": 0.56,
+      "stable_groups": 41,
+      "wording_flips": 3,
+      "comparable_pairs": 45,
+      "modal_flip_rate": 0.06666666666666667
+    },
+    "alarmist": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 27,
+      "nvd_accuracy": 0.36,
+      "stable_groups": 13,
+      "wording_flips": 5,
+      "comparable_pairs": 15,
+      "modal_flip_rate": 0.3333333333333333
+    },
+    "downplaying": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 20,
+      "nvd_accuracy": 0.26666666666666666,
+      "stable_groups": 12,
+      "wording_flips": 11,
+      "comparable_pairs": 15,
+      "modal_flip_rate": 0.7333333333333333
+    },
+    "verbose": {
+      "description_groups": 15,
+      "groups_with_results": 15,
+      "valid_repeats": 75,
+      "nvd_matching_repeats": 41,
+      "nvd_accuracy": 0.5466666666666666,
+      "stable_groups": 13,
+      "wording_flips": 1,
+      "comparable_pairs": 15,
+      "modal_flip_rate": 0.06666666666666667
+    }
+  },
+  "repeat_limit": 5,
+  "selected_cve_ids": [
+    "CVE-2015-8959",
+    "CVE-2016-2324",
+    "CVE-2018-14360",
+    "CVE-2019-13224",
+    "CVE-2020-12607",
+    "CVE-2020-36766",
+    "CVE-2021-23639",
+    "CVE-2022-0819",
+    "CVE-2022-23649",
+    "CVE-2022-25319",
+    "CVE-2022-2571",
+    "CVE-2022-36021",
+    "CVE-2022-39368",
+    "CVE-2023-39978",
+    "CVE-2023-4681"
+  ],
+  "generated_at": "2026-11-24T22:07:13.284520+00:00",
+  "source_log": "code_direct/data/description_only_runs.jsonl"
+}

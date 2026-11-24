@@ -40,11 +40,15 @@ def _question_payload(q) -> dict:
 
 
 def call(description: str) -> dict:
-    state = questions.state(description)
+    return call_state(questions.state(description), questions.METRICS)
+
+
+def call_state(state: dict, question_set: dict) -> dict:
+    """Use the same pinned client, retries and raw logging for another assessment condition."""
     request = {
         "model": config.JEV_MODEL,
         "state": state,
-        "questions": {k: _question_payload(q) for k, q in questions.METRICS.items()},
+        "questions": {k: _question_payload(q) for k, q in question_set.items()},
     }
     record = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -54,7 +58,7 @@ def call(description: str) -> dict:
     }
     t0 = time.monotonic()
     try:
-        resp = _get_client().system_one(state=state, questions=questions.METRICS)
+        resp = _get_client().system_one(state=state, questions=question_set)
         record["latency_s"] = round(time.monotonic() - t0, 3)
         raw_text = resp.raw_http_response.text
         record.update(ok=True, model_version=resp.model, request_id=resp.request_id,

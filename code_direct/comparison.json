@@ -1,0 +1,3399 @@
+{
+  "model": "jev-1.14.0",
+  "notes": "Descriptive matched comparison, not a causal or significance test. Rewrites are not human-verified. Accuracy uses matching repeat indices per CVE/version. Code flips use unique modal bands of those matched calls. Wording-rate differences additionally require unique original and rewrite modes in both conditions. Neutral pools three versions per CVE. Positive deltas mean with-code minus without-code.",
+  "repeat_limit": 5,
+  "coverage": {
+    "selected_cves": 15,
+    "description_groups": 105,
+    "groups_with_matched_results": 105,
+    "matched_repeat_pairs": 525,
+    "expected_repeat_pairs": 525,
+    "with_code_only_repeats": 0,
+    "without_code_only_repeats": 0
+  },
+  "overall": {
+    "without_code": {
+      "valid_repeats": 525,
+      "nvd_matching_repeats": 258,
+      "nvd_accuracy": 0.49142857142857144,
+      "wording_flips": 20,
+      "comparable_pairs": 90,
+      "modal_flip_rate": 0.2222222222222222
+    },
+    "with_code": {
+      "valid_repeats": 525,
+      "nvd_matching_repeats": 229,
+      "nvd_accuracy": 0.4361904761904762,
+      "wording_flips": 20,
+      "comparable_pairs": 90,
+      "modal_flip_rate": 0.2222222222222222
+    },
+    "accuracy_delta_pp": -5.5238095238095255,
+    "wording_flip_delta_pp": 0.0,
+    "code_induced_flips": 27,
+    "code_comparable_groups": 105,
+    "code_induced_flip_rate": 0.2571428571428571
+  },
+  "by_variant": {
+    "original": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 44,
+        "nvd_accuracy": 0.5866666666666667,
+        "wording_flips": 0,
+        "comparable_pairs": 0,
+        "modal_flip_rate": null
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 31,
+        "nvd_accuracy": 0.41333333333333333,
+        "wording_flips": 0,
+        "comparable_pairs": 0,
+        "modal_flip_rate": null
+      },
+      "accuracy_delta_pp": -17.333333333333336,
+      "wording_flip_delta_pp": null,
+      "code_induced_flips": 5,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.3333333333333333
+    },
+    "neutral_1": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 44,
+        "nvd_accuracy": 0.5866666666666667,
+        "wording_flips": 0,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.0
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 36,
+        "nvd_accuracy": 0.48,
+        "wording_flips": 2,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.13333333333333333
+      },
+      "accuracy_delta_pp": -10.666666666666668,
+      "wording_flip_delta_pp": 13.333333333333334,
+      "code_induced_flips": 5,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.3333333333333333
+    },
+    "neutral_2": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 40,
+        "nvd_accuracy": 0.5333333333333333,
+        "wording_flips": 1,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.06666666666666667
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 35,
+        "nvd_accuracy": 0.4666666666666667,
+        "wording_flips": 2,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.13333333333333333
+      },
+      "accuracy_delta_pp": -6.666666666666665,
+      "wording_flip_delta_pp": 6.666666666666667,
+      "code_induced_flips": 4,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.26666666666666666
+    },
+    "neutral_3": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 42,
+        "nvd_accuracy": 0.56,
+        "wording_flips": 2,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.13333333333333333
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 38,
+        "nvd_accuracy": 0.5066666666666667,
+        "wording_flips": 3,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.2
+      },
+      "accuracy_delta_pp": -5.333333333333334,
+      "wording_flip_delta_pp": 6.666666666666668,
+      "code_induced_flips": 4,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.26666666666666666
+    },
+    "alarmist": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 27,
+        "nvd_accuracy": 0.36,
+        "wording_flips": 5,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.3333333333333333
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 25,
+        "nvd_accuracy": 0.3333333333333333,
+        "wording_flips": 2,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.13333333333333333
+      },
+      "accuracy_delta_pp": -2.666666666666667,
+      "wording_flip_delta_pp": -20.0,
+      "code_induced_flips": 3,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.2
+    },
+    "downplaying": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 20,
+        "nvd_accuracy": 0.26666666666666666,
+        "wording_flips": 11,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.7333333333333333
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 28,
+        "nvd_accuracy": 0.37333333333333335,
+        "wording_flips": 10,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.6666666666666666
+      },
+      "accuracy_delta_pp": 10.666666666666668,
+      "wording_flip_delta_pp": -6.666666666666665,
+      "code_induced_flips": 3,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.2
+    },
+    "verbose": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 41,
+        "nvd_accuracy": 0.5466666666666666,
+        "wording_flips": 1,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.06666666666666667
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 36,
+        "nvd_accuracy": 0.48,
+        "wording_flips": 1,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.06666666666666667
+      },
+      "accuracy_delta_pp": -6.666666666666665,
+      "wording_flip_delta_pp": 0.0,
+      "code_induced_flips": 3,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.2
+    }
+  },
+  "by_category": {
+    "original": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 44,
+        "nvd_accuracy": 0.5866666666666667,
+        "wording_flips": 0,
+        "comparable_pairs": 0,
+        "modal_flip_rate": null
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 31,
+        "nvd_accuracy": 0.41333333333333333,
+        "wording_flips": 0,
+        "comparable_pairs": 0,
+        "modal_flip_rate": null
+      },
+      "accuracy_delta_pp": -17.333333333333336,
+      "wording_flip_delta_pp": null,
+      "code_induced_flips": 5,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.3333333333333333
+    },
+    "neutral": {
+      "without_code": {
+        "valid_repeats": 225,
+        "nvd_matching_repeats": 126,
+        "nvd_accuracy": 0.56,
+        "wording_flips": 3,
+        "comparable_pairs": 45,
+        "modal_flip_rate": 0.06666666666666667
+      },
+      "with_code": {
+        "valid_repeats": 225,
+        "nvd_matching_repeats": 109,
+        "nvd_accuracy": 0.48444444444444446,
+        "wording_flips": 7,
+        "comparable_pairs": 45,
+        "modal_flip_rate": 0.15555555555555556
+      },
+      "accuracy_delta_pp": -7.55555555555556,
+      "wording_flip_delta_pp": 8.88888888888889,
+      "code_induced_flips": 13,
+      "code_comparable_groups": 45,
+      "code_induced_flip_rate": 0.28888888888888886
+    },
+    "alarmist": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 27,
+        "nvd_accuracy": 0.36,
+        "wording_flips": 5,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.3333333333333333
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 25,
+        "nvd_accuracy": 0.3333333333333333,
+        "wording_flips": 2,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.13333333333333333
+      },
+      "accuracy_delta_pp": -2.666666666666667,
+      "wording_flip_delta_pp": -20.0,
+      "code_induced_flips": 3,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.2
+    },
+    "downplaying": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 20,
+        "nvd_accuracy": 0.26666666666666666,
+        "wording_flips": 11,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.7333333333333333
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 28,
+        "nvd_accuracy": 0.37333333333333335,
+        "wording_flips": 10,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.6666666666666666
+      },
+      "accuracy_delta_pp": 10.666666666666668,
+      "wording_flip_delta_pp": -6.666666666666665,
+      "code_induced_flips": 3,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.2
+    },
+    "verbose": {
+      "without_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 41,
+        "nvd_accuracy": 0.5466666666666666,
+        "wording_flips": 1,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.06666666666666667
+      },
+      "with_code": {
+        "valid_repeats": 75,
+        "nvd_matching_repeats": 36,
+        "nvd_accuracy": 0.48,
+        "wording_flips": 1,
+        "comparable_pairs": 15,
+        "modal_flip_rate": 0.06666666666666667
+      },
+      "accuracy_delta_pp": -6.666666666666665,
+      "wording_flip_delta_pp": 0.0,
+      "code_induced_flips": 3,
+      "code_comparable_groups": 15,
+      "code_induced_flip_rate": 0.2
+    }
+  },
+  "code_comparisons": [
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "original",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "original",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "original",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "original",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "original",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "original",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "original",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "original",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "original",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "original",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "original",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "original",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 4,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "original",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "original",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "original",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 1,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_1",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 1,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_2",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 1,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_3",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 3,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "alarmist",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "downplaying",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 4,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "verbose",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 1,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_1",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_2",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_3",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "alarmist",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "downplaying",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "verbose",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_1",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_2",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_3",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "alarmist",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "downplaying",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "verbose",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_1",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_2",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_3",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "alarmist",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "downplaying",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "verbose",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_1",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_2",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_3",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "alarmist",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "downplaying",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "verbose",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_1",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_2",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_3",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "alarmist",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 4,
+      "without_code_nvd_matches": 2,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "downplaying",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "verbose",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_1",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_2",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_3",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "alarmist",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "downplaying",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 3,
+      "without_code_nvd_matches": 1,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "verbose",
+      "nvd_band": "Critical",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Critical"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_1",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_2",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_3",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "alarmist",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "None"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "downplaying",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "verbose",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Critical"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_1",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_2",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_3",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "alarmist",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "downplaying",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "verbose",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_1",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_2",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_3",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "alarmist",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "downplaying",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "verbose",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 1,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_1",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_2",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_3",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "alarmist",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "downplaying",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "verbose",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_1",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 4,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_2",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_3",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 2,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "alarmist",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "downplaying",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "verbose",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_1",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_2",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_3",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "alarmist",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "downplaying",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "verbose",
+      "nvd_band": "High",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_1",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_2",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_3",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "alarmist",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "High"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "downplaying",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "verbose",
+      "nvd_band": "Low",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_1",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_2",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 4,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_3",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "alarmist",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "High"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 1,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": true
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "downplaying",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Low"
+      ],
+      "without_code_modal_bands": [
+        "Low"
+      ],
+      "with_code_nvd_matches": 0,
+      "without_code_nvd_matches": 0,
+      "code_induced_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "verbose",
+      "nvd_band": "Medium",
+      "matched_repeats": 5,
+      "repeat_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "with_code_valid_repeats": 5,
+      "without_code_valid_repeats": 5,
+      "with_code_modal_bands": [
+        "Medium"
+      ],
+      "without_code_modal_bands": [
+        "Medium"
+      ],
+      "with_code_nvd_matches": 5,
+      "without_code_nvd_matches": 5,
+      "code_induced_flip": false
+    }
+  ],
+  "matched_wording_comparisons": [
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "neutral_3",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2015-8959",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "downplaying",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2016-2324",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "downplaying",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2018-14360",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "downplaying",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2019-13224",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2020-12607",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "downplaying",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2020-36766",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "downplaying",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2021-23639",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "alarmist",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-0819",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-23649",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-25319",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-2571",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-36021",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_1",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_2",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "neutral_3",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2022-39368",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "alarmist",
+      "with_code_flip": true,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_1",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_2",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "neutral_3",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-39978",
+      "variant": "verbose",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "alarmist",
+      "with_code_flip": false,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "downplaying",
+      "with_code_flip": true,
+      "without_code_flip": true
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_1",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_2",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "neutral_3",
+      "with_code_flip": true,
+      "without_code_flip": false
+    },
+    {
+      "cve_id": "CVE-2023-4681",
+      "variant": "verbose",
+      "with_code_flip": true,
+      "without_code_flip": false
+    }
+  ],
+  "generated_at": "2026-11-24T22:07:13.667335+00:00",
+  "selected_cve_ids": [
+    "CVE-2015-8959",
+    "CVE-2016-2324",
+    "CVE-2018-14360",
+    "CVE-2019-13224",
+    "CVE-2020-12607",
+    "CVE-2020-36766",
+    "CVE-2021-23639",
+    "CVE-2022-0819",
+    "CVE-2022-23649",
+    "CVE-2022-25319",
+    "CVE-2022-2571",
+    "CVE-2022-36021",
+    "CVE-2022-39368",
+    "CVE-2023-39978",
+    "CVE-2023-4681"
+  ]
+}

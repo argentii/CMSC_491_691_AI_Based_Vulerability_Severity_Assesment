@@ -219,6 +219,13 @@ To try the prompt by hand instead (for example in Google AI Studio), paste the *
 instruction** block as the system instructions, the **Response schema** block as the structured
 output schema, and the **User message template** filled in with one description.
 
+## Description plus code: direct-severity experiment
+
+See [code_direct/README.md](code_direct/README.md) for the separate 15-CVE experiment,
+OpenRouter description rewrites, automatic repeated Jev assessment and saved analysis.
+It reuses the existing rewrite prompt and Jev client; its inputs and results live under
+`code_direct/` and do not change the original pilot logs or reports.
+
 ## Project layout
 
 ```
